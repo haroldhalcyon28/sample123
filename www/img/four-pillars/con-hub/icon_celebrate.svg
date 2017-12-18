@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.769665in" height="0.934661in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 176 214"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#00AB98}
+    .fil0 {fill:#00AB98;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M20 127c-2,12 5,24 17,26 12,3 24,-5 27,-17l4 -34c-12,-7 -8,21 -29,16 -14,-3 -18,6 -19,9z"/>
+  <path class="fil0" d="M176 167c-1,-3 -4,-4 -7,-3l-15 5 -9 -29c8,-4 14,-10 18,-18 5,-10 6,-20 2,-31l-25 -57 -66 22 4 18 -56 -12 -19 60c-2,10 0,21 5,30 5,7 12,13 20,16l-6 29 -16 -3c-3,-1 -6,1 -6,4 -1,3 1,6 4,6l21 4c0,0 0,0 0,0 0,0 0,0 0,0l21 4c0,0 1,0 1,0 3,0 5,-2 5,-4 1,-3 -1,-6 -4,-6l-16 -3 6 -29c1,0 2,0 3,0 19,0 35,-13 39,-32l4 -33 3 12c5,16 21,27 38,27 2,0 5,0 7,-1l9 28 -15 5c-3,1 -4,4 -3,7 1,2 3,4 5,4 1,0 1,0 2,0l40 -13c3,-1 4,-4 3,-7zm-105 -31c-3,15 -19,26 -35,22l0 0c-8,-2 -14,-6 -18,-13 -4,-7 -6,-14 -4,-21l16 -50 48 10 -7 52zm28 -22l-13 -51 47 -16 21 48c2,7 2,15 -2,22 -3,7 -9,12 -17,15 -3,1 -6,2 -9,2 -13,0 -24,-8 -27,-20z"/>
+  <path class="fil0" d="M148 98c-1,-2 -6,-11 -20,-6 -20,7 -19,-21 -30,-13l7 33c4,12 17,18 28,14 12,-4 18,-16 14,-28z"/>
+  <rect class="fil1" transform="matrix(1.0494 -0.316917 0.316917 1.0494 62.7227 1.97197)" width="11" height="20" rx="6" ry="6"/>
+  <rect class="fil1" transform="matrix(1.05805 0.286728 -0.286728 1.05805 92.2773 0.145496)" width="11" height="20" rx="6" ry="6"/>
+  <rect class="fil1" transform="matrix(0.776417 -0.773858 0.773858 0.776417 40.5452 21.2961)" width="11" height="20" rx="6" ry="6"/>
+  <rect class="fil1" transform="matrix(0.312134 -1.05083 1.05083 0.312134 32.9181 49.2374)" width="11" height="20" rx="6" ry="6"/>
+  <rect class="fil1" transform="matrix(0.902807 0.621788 -0.621788 0.902807 111.861 13.121)" width="11" height="20" rx="6" ry="6"/>
+ </g>
+</svg>

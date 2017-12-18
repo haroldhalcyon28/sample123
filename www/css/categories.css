@@ -1,3 +1,11 @@
+.intro-filinvest-city .main, .intro-map-main, .up-dev3 .main {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
 /* ==========================
         DISTRICT COLORS
    ========================== */
@@ -337,17 +345,27 @@
   width: 100%;
   height: auto;
 }
-.fast-facts .img-container .map .dynamic path {
+.fast-facts .img-container .map .dynamic path,
+.fast-facts .img-container .map .dynamic polygon {
   display: none;
 }
-.fast-facts .img-container .map .dynamic path.active {
+.fast-facts .img-container .map .dynamic path.active,
+.fast-facts .img-container .map .dynamic polygon.active {
   display: block;
+}
+.fast-facts .img-container .map .dynamic .road {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container .map .dynamic .road .active {
   -webkit-animation: dash 25s linear infinite;
           animation: dash 25s linear infinite;
 }
-.fast-facts .img-container .map .dynamic path.major_roads {
-  stroke-dasharray: 150;
-  stroke-dashoffset: 4000;
+.fast-facts .img-container .map .dynamic .muntinlupa {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: draw 1s linear forwards;
+          animation: draw 1s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -503,6 +521,22 @@
     stroke-dashoffset: 0;
   }
 }
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .fontsizel {
   font-size: 4vh;
 }
@@ -538,7 +572,6 @@
   background: url("../img/four-pillars/Copy of _KAI4013.jpg");
   background-color: white;
   background-size: cover;
-  background-position: 315% center;
   top: 0;
   left: 0;
   z-index: -3;
@@ -1028,6 +1061,9 @@
 /* ===================
     Convergence Hub
  ================== */
+.con-hub .center.sliding span {
+  color: black;
+}
 .con-hub .main {
   margin: 5vh 4vw;
 }
@@ -1056,13 +1092,12 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 10vh;
+  margin: 5vw 0vw 0vw 5vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
-  font-size: 2vh;
-  width: 24vw;
-  margin: 1vh auto;
-  text-align: center;
+  font-size: 2.5vh;
+  width: 34vw;
+  margin: 1vh 0vh 0vh -5vh;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -1321,14 +1356,6 @@
   margin-top: -25vh;
 }
 
-.intro-filinvest-city .main, .intro-map-main {
-  background-image: url("../img/bg_emblem.png");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 2vw 38vh;
-  background-size: 85vh;
-}
-
 /* ===================
     INTRO HOME
  ================== */
@@ -1445,10 +1472,10 @@
   background: url("../img/intro/intro-fil-city_2.jpg");
   background-color: white;
   background-size: cover;
-  background-position: 315% center;
   top: 0;
   left: 0;
   z-index: -3;
+  background-position: 0;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -1457,28 +1484,31 @@
   background: rgba(1, 45, 104, 0.4);
 }
 .intro-filinvest-city .backdrop-blind {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  top: 0;
   left: 0;
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
   height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
+  padding: 12vh 0;
   width: 60vw;
   margin: auto;
-  margin-top: 15vh;
-  margin-left: 28vw;
 }
 .intro-filinvest-city .main .intro-home-title img {
   width: 40vw;
@@ -1589,6 +1619,60 @@
 .up-dev .up-dev2 .logos .festivalDiv {
   margin-left: 2vw;
   margin: auto;
+}
+
+.up-dev3 .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background-position: 0;
+}
+.up-dev3 .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.up-dev3 .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  left: 0;
+  z-index: -1;
+}
+.up-dev3 .main {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.up-dev3 .main .intro-home-title {
+  padding: 12vh 0;
+  width: 60vw;
+  margin: auto;
+}
+.up-dev3 .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.up-dev3 .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
 }
 
 /* ==========================
@@ -1930,17 +2014,27 @@
   width: 100%;
   height: auto;
 }
-.fast-facts .img-container .map .dynamic path {
+.fast-facts .img-container .map .dynamic path,
+.fast-facts .img-container .map .dynamic polygon {
   display: none;
 }
-.fast-facts .img-container .map .dynamic path.active {
+.fast-facts .img-container .map .dynamic path.active,
+.fast-facts .img-container .map .dynamic polygon.active {
   display: block;
+}
+.fast-facts .img-container .map .dynamic .road {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container .map .dynamic .road .active {
   -webkit-animation: dash 25s linear infinite;
           animation: dash 25s linear infinite;
 }
-.fast-facts .img-container .map .dynamic path.major_roads {
-  stroke-dasharray: 150;
-  stroke-dashoffset: 4000;
+.fast-facts .img-container .map .dynamic .muntinlupa {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: draw 1s linear forwards;
+          animation: draw 1s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -2082,6 +2176,14 @@
 @keyframes dash {
   from {
     stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
   }
   to {
     stroke-dashoffset: 0;
@@ -2612,6 +2714,9 @@
 /* ===================
     Convergence Hub
  ================== */
+.con-hub .center.sliding span {
+  color: black;
+}
 .con-hub .main {
   margin: 5vh 4vw;
 }
@@ -2640,13 +2745,12 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 10vh;
+  margin: 5vw 0vw 0vw 5vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
-  font-size: 2vh;
-  width: 24vw;
-  margin: 1vh auto;
-  text-align: center;
+  font-size: 2.5vh;
+  width: 34vw;
+  margin: 1vh 0vh 0vh -5vh;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -2905,14 +3009,6 @@
   margin-top: -25vh;
 }
 
-.intro-filinvest-city .main, .intro-map-main {
-  background-image: url("../img/bg_emblem.png");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 2vw 38vh;
-  background-size: 85vh;
-}
-
 /* ===================
     INTRO HOME
  ================== */
@@ -3033,6 +3129,7 @@
   top: 0;
   left: 0;
   z-index: -3;
+  background-position: 0;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -3041,28 +3138,31 @@
   background: rgba(1, 45, 104, 0.4);
 }
 .intro-filinvest-city .backdrop-blind {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  top: 0;
   left: 0;
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
   height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
+  padding: 12vh 0;
   width: 60vw;
   margin: auto;
-  margin-top: 15vh;
-  margin-left: 28vw;
 }
 .intro-filinvest-city .main .intro-home-title img {
   width: 40vw;
@@ -3173,4 +3273,59 @@
 .up-dev .up-dev2 .logos .festivalDiv {
   margin-left: 2vw;
   margin: auto;
+}
+
+.up-dev3 .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background-position: 0;
+}
+.up-dev3 .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.up-dev3 .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  left: 0;
+  z-index: -1;
+}
+.up-dev3 .main {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.up-dev3 .main .intro-home-title {
+  padding: 12vh 0;
+  width: 60vw;
+  margin: auto;
+}
+.up-dev3 .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.up-dev3 .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
 }
