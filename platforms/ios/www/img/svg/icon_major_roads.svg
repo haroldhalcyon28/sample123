@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.20798in" height="0.929201in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 183 141"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#333333;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_001-road-with-broken-line.eps">
+   <path class="fil0" d="M95 0c0,4 0,8 0,12l-8 0c0,-4 0,-8 0,-12l-18 0c-12,47 -25,94 -37,141l50 0c0,-4 0,-8 0,-12l17 0c0,4 0,8 0,12l50 0c-12,-47 -25,-94 -37,-141l-18 0zm-8 29c3,0 6,0 9,0 0,11 1,22 1,33l-12 0c0,-11 1,-22 1,-33zm-3 83c0,-11 1,-22 1,-33 4,0 9,0 13,0 0,11 1,22 1,33l-16 0z"/>
+   <path class="fil0" d="M125 0l-6 0c16,47 31,94 47,141l17 0c-19,-47 -38,-94 -58,-141z"/>
+   <path class="fil0" d="M58 0c-19,47 -38,94 -58,141l17 0c16,-47 31,-94 47,-141l-6 0z"/>
+  </g>
+ </g>
+</svg>

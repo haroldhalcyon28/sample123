@@ -1,0 +1,3176 @@
+/* ==========================
+        DISTRICT COLORS
+   ========================== */
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.districts {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+.districts .main {
+  margin: 5vh 5vw;
+  /* ============================== 
+              FIRST SCREEN
+     ============================== */
+  /* ============================== 
+              NORTH GATE
+     ============================== */
+  /* ============================== 
+              WEST GATE
+     ============================== */
+  /* ============================== 
+              PALMS GATE
+     ============================== */
+  /* ============================== 
+              WOODS DISTRICT
+     ============================== */
+  /* ============================== 
+          SPECTRUM DISTRICT
+     ============================== */
+  /* ============================== 
+              SOUTH STATION
+     ============================== */
+  /* ============================== 
+          CIVIC PLAZA DISTRICT
+     ============================== */
+  /* ============================== 
+          CITY CENTER
+     ============================== */
+  /* ============================== 
+          SOUTH GATE
+     ============================== */
+}
+.districts .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #012d68;
+  padding: 0;
+}
+.districts .main .district-map {
+  margin-top: 10vh;
+}
+.districts .main .district-map .filinvestMap svg {
+  width: 100%;
+  height: 100%;
+}
+.districts .main .district-map .title {
+  margin-bottom: -1.5vh;
+  font-size: 4vh;
+}
+.districts .main .district-map .subtext {
+  font-size: 4vh;
+  font-weight: 400;
+}
+.districts .main .district-map .desc {
+  font-size: 2.2vh;
+  color: #333333;
+}
+.districts .main .col-30 {
+  z-index: -3;
+  margin-top: -12vh;
+  display: none;
+}
+.districts .main .col-30.active {
+  display: block;
+}
+.districts .main .firstDistrict {
+  margin-top: 9vh;
+}
+.districts .main .firstDistrict .coloredText {
+  color: #012d68;
+}
+.districts .main .northDistrict .mapTitle,
+.districts .main .northDistrict .mapSub {
+  color: #8abe25;
+}
+.districts .main .northDistrict .bellevue,
+.districts .main .northDistrict .northgate,
+.districts .main .northDistrict .genpact,
+.districts .main .northDistrict .convergys {
+  width: 12.5vw;
+}
+.districts .main .northDistrict .northgate,
+.districts .main .northDistrict .secondlogo {
+  margin-top: 2vh;
+}
+.districts .main .northDistrict .secondLogo {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.districts .main .northDistrict .onlyLogo {
+  margin: auto;
+}
+.districts .main .westDistrict .mapTitle,
+.districts .main .westDistrict .mapSub {
+  color: #5ba9e7;
+}
+.districts .main .westDistrict .westgate {
+  width: 25vw;
+}
+.districts .main .westDistrict .secondLayer {
+  margin-top: 2.8vh;
+  margin-bottom: 0.5vh;
+}
+.districts .main .westDistrict .secondLayer .studio {
+  width: 12vw;
+}
+.districts .main .westDistrict .secondLayer .sandr {
+  margin-top: -1.3vh;
+  margin-left: 2vw;
+  width: 10vw;
+}
+.districts .main .westDistrict .thirdLayer {
+  margin: auto;
+}
+.districts .main .westDistrict .thirdLayer .benz {
+  margin-top: -0.3vw;
+  margin-left: -3.2vw;
+  width: 7.5vw;
+}
+.districts .main .westDistrict .thirdLayer .meralco {
+  margin: 0.3vw 0vw 0vw -1vw;
+  width: 8vw;
+}
+.districts .main .westDistrict .thirdLayer .caltex {
+  margin-left: 2vw;
+  width: 5.4vw;
+}
+.districts .main .westDistrict .fourthLayer {
+  margin: auto;
+}
+.districts .main .westDistrict .fourthLayer .mazda,
+.districts .main .westDistrict .fourthLayer .kia {
+  width: 13vw;
+}
+.districts .main .westDistrict .fourthLayer .mazda {
+  margin-left: -1vw;
+  margin-top: 1.9vh;
+}
+.districts .main .westDistrict .fourthLayer .kia {
+  margin-left: -1.5vw;
+}
+.districts .main .palmsDistrict .mapTitle,
+.districts .main .palmsDistrict .mapSub {
+  color: #d99f4d;
+}
+.districts .main .palmsDistrict .botanika {
+  width: 25vw;
+}
+.districts .main .palmsDistrict .thepalms,
+.districts .main .palmsDistrict .palmspointe {
+  width: 12vw;
+}
+.districts .main .palmsDistrict .palmspointe {
+  margin-top: 2vh;
+}
+.districts .main .palmsDistrict .thirdLayer {
+  margin-top: 1.5vh;
+}
+.districts .main .palmsDistrict .thirdLayer .thelevels,
+.districts .main .palmsDistrict .thirdLayer .hyundai {
+  width: 12vw;
+}
+.districts .main .palmsDistrict .thirdLayer .hyundai {
+  margin-top: 1vh;
+}
+.districts .main .woodsDistrict .mapTitle,
+.districts .main .woodsDistrict .mapSub {
+  color: #e87f32;
+}
+.districts .main .woodsDistrict .firstLayer {
+  margin-left: -1.5vw;
+}
+.districts .main .woodsDistrict .firstLayer .feu {
+  margin-left: 1.2vw;
+  width: 13vw;
+}
+.districts .main .woodsDistrict .firstLayer .doh {
+  margin-left: -2vw;
+  width: 18vw;
+}
+.districts .main .specDistrict .mapTitle,
+.districts .main .specDistrict .mapSub {
+  color: #ebb847;
+}
+.districts .main .specDistrict .firstLayer {
+  margin-top: -2.5vh;
+}
+.districts .main .specDistrict .firstLayer .bristol {
+  margin-left: -1vw;
+  width: 14vw;
+}
+.districts .main .specDistrict .firstLayer .parkway {
+  margin-left: 0.5vw;
+  margin-top: -0.6vh;
+  width: 12vw;
+}
+.districts .main .specDistrict .tent {
+  margin-left: -1.1vw;
+  width: 15vw;
+}
+.districts .main .specDistrict .acacia {
+  margin-top: 1vh;
+}
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
+  width: 12vw;
+}
+.districts .main .specDistrict .insular {
+  margin-left: 4vw;
+  width: 7vw;
+}
+.districts .main .specDistrict .commerce {
+  margin-top: 1vh;
+  width: 12vw;
+}
+.districts .main .southStationDistrict .mapTitle,
+.districts .main .southStationDistrict .mapSub {
+  color: #ba84db;
+}
+.districts .main .southStationDistrict .southstation {
+  margin: 3.5vh auto auto 8vh;
+  width: 10.5vw;
+}
+.districts .main .civicDistrict .mapTitle,
+.districts .main .civicDistrict .mapSub {
+  color: #52cf71;
+}
+.districts .main .civicDistrict .asian {
+  width: 25vw;
+}
+.districts .main .civicDistrict .crimson {
+  width: 28vw;
+}
+.districts .main .civicDistrict .crimson {
+  margin-top: -3vh;
+}
+.districts .main .civicDistrict .entrata,
+.districts .main .civicDistrict .fda {
+  width: 11vw;
+}
+.districts .main .civicDistrict .fda {
+  margin-left: 1vw;
+  margin-top: 2vh;
+}
+.districts .main .cityCenter .mapTitle,
+.districts .main .cityCenter .mapSub {
+  color: #f3784d;
+}
+.districts .main .cityCenter img {
+  width: 100%;
+}
+.districts .main .southGate .mapTitle,
+.districts .main .southGate .mapSub {
+  color: #F892A1;
+}
+
+.fast-facts, .ceo-statement, .awards {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.fast-facts .main {
+  padding: 5vh 5vw;
+}
+.fast-facts .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.fast-facts .icons span {
+  margin-right: 2vw;
+}
+.fast-facts .icons svg {
+  height: 9vh;
+  width: auto;
+}
+.fast-facts .icons svg.active path,
+.fast-facts .icons svg.active polygon {
+  fill: #00AB98;
+}
+.fast-facts .tabs-container {
+  overflow: hidden;
+}
+.fast-facts .tabs-container .tab-title h1 {
+  font-size: 4vw;
+  font-weight: 100;
+}
+.fast-facts .tabs-container .tab-desc {
+  font-size: 2.4vw;
+  color: #333333;
+}
+.fast-facts .tabs-container .tab-desc span {
+  color: #00AB98;
+}
+.fast-facts .img-container {
+  position: relative;
+}
+.fast-facts .img-container #filinvest-icon {
+  display: none;
+  position: absolute;
+  width: 7vw;
+  top: 20vh;
+  left: 22vw;
+}
+.fast-facts .img-container #filinvest-icon.active {
+  display: block;
+}
+.fast-facts .img-container #fast-facts-map {
+  width: 100%;
+  height: auto;
+}
+.fast-facts .img-container .map .dynamic path {
+  display: none;
+}
+.fast-facts .img-container .map .dynamic path.active {
+  display: block;
+  -webkit-animation: dash 25s linear infinite;
+          animation: dash 25s linear infinite;
+}
+.fast-facts .img-container .map .dynamic path.major_roads {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container span {
+  display: none;
+  position: absolute;
+}
+.fast-facts .img-container span.active {
+  display: block;
+}
+.fast-facts .img-container .text.areanearby {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fast-facts .img-container .text.areanearby .cavite {
+  top: 40vh;
+  left: 7vw;
+}
+.fast-facts .img-container .text.areanearby .paranaque {
+  top: 12vh;
+  left: 17vw;
+}
+.fast-facts .img-container .text.areanearby .laspinas {
+  top: 29vh;
+  left: 14vw;
+}
+.fast-facts .img-container .text.areanearby .lagunadebay {
+  top: 30vh;
+  left: 37vw;
+}
+.fast-facts .img-container .text.areanearby .muntinlupa {
+  top: 41vh;
+  left: 26vw;
+}
+.fast-facts .img-container .text.areanearby .laguna {
+  top: 63vh;
+  left: 22vw;
+}
+.fast-facts .img-container .text.major_roads {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fast-facts .img-container .text.major_roads .alabang-zapote {
+  top: 27vh;
+  left: 12vw;
+}
+.fast-facts .img-container .text.major_roads .metromanila {
+  top: 12vh;
+  left: 22vw;
+}
+.fast-facts .img-container .text.major_roads .slex {
+  top: 3vh;
+  left: 34vw;
+}
+.fast-facts .img-container .text.major_roads .olh {
+  top: 33vh;
+  left: 36vw;
+}
+.fast-facts .img-container .text.major_roads .dhr {
+  top: 41vh;
+  left: 15vw;
+}
+.fast-facts .img-container .text.major_roads .mcx {
+  top: 51vh;
+  left: 27vw;
+}
+
+.ceo-statement .main {
+  padding: 5vh 5vw;
+}
+.ceo-statement .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.ceo-statement .center {
+  margin: 0 auto;
+  font-size: 2.4vw;
+  color: #333333;
+  text-align: center;
+}
+.ceo-statement .center span {
+  color: #00AB98;
+}
+.ceo-statement .statement {
+  text-align: justify;
+  font-size: 2.2vw;
+  padding-top: 2vh;
+}
+.ceo-statement .statement .ceo-details {
+  font-size: 1.8vw;
+}
+.ceo-statement .statement .ceo-details span {
+  display: block;
+}
+.ceo-statement .statement .ceo-details span:first-child {
+  font-weight: bold;
+}
+.ceo-statement .statement img {
+  width: 100%;
+}
+.ceo-statement .statement p {
+  color: #333333;
+}
+
+.awards .main {
+  padding: 5vh 5vw;
+}
+.awards .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.awards .outer-row {
+  font-size: 2.4vw;
+  color: #333333;
+}
+.awards .outer-row .inner-row {
+  margin-top: 3vh;
+}
+.awards .outer-row .inner-row .stmt {
+  font-size: 2.2vw;
+  line-height: 200%;
+}
+.awards .outer-row span {
+  color: #00AB98;
+}
+.awards img {
+  width: 100%;
+}
+.awards .asia-pacific img {
+  display: block;
+  width: 60%;
+  margin: -5vh auto;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.fontsizel {
+  font-size: 4vh;
+}
+
+.teal {
+  color: #00AB98;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 3vh 0;
+  margin-bottom: 0;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.cbd, .garden-city, .modern-metro, .con-hub {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+/* ===================
+    Main MENU
+ ================== */
+.fourPillarsMenu .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/four-pillars/Copy of _KAI4013.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.fourPillarsMenu .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.fourPillarsMenu .backdrop-blind {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.fourPillarsMenu .main {
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+}
+.fourPillarsMenu .main .pillarDiv {
+  display: block;
+}
+.fourPillarsMenu .main .pillarDiv .tag-title h1 {
+  font-size: 6.5vw;
+  text-align: center;
+  color: #00AB98;
+  padding: 0vw 0vw 3.5vw 7vw;
+}
+.fourPillarsMenu .main .pillars-outer {
+  margin-left: 9%;
+  margin-right: 1%;
+  display: block;
+  text-align: center;
+  width: 90%;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner {
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3vw;
+  -webkit-box-shadow: inset 0 0 0 2px transparent;
+          box-shadow: inset 0 0 0 2px transparent;
+  position: relative;
+  vertical-align: middle;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(1) {
+  padding-right: 4vw;
+  padding-left: 3vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(2) {
+  padding-left: 4vw;
+  padding-right: 6vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) {
+  padding-right: 3vw;
+  padding-left: 2vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) .number {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) .name {
+  padding-top: 2.5vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) {
+  padding-right: 1vw;
+  padding-left: 1.5vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) .number {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) .name {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.ripple {
+  position: relative;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  content: '';
+  position: absolute;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar .number {
+  font-size: 10vw;
+  color: #00AB98;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar .name {
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 3vh;
+  letter-spacing: 1.5px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar span {
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  font-weight: 500;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.bottomTop::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.leftRight::after {
+  bottom: 0;
+  left: 0;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.rightLeft::before {
+  bottom: 0;
+  right: 0;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded::after {
+  width: 100%;
+  height: 100%;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop::before {
+  border-left-color: #D9CBB3;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop.first::before {
+  -webkit-transition: height 0.25s linear 0.25s;
+  transition: height 0.25s linear 0.25s;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop.second::before {
+  -webkit-transition: height 0.25s ease-out 0.49s;
+  transition: height 0.25s ease-out 0.49s;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.rightLeft::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.leftRight::after {
+  border-bottom-color: #D9CBB3;
+  -webkit-transition: width 0.25s linear 0.25s;
+  transition: width 0.25s linear 0.25s;
+}
+
+/* ===================
+    PREMIERE CBD
+ ================== */
+.cbd {
+  font-family: ubuntu;
+}
+.cbd .cbd1-img-con {
+  margin: 4vh 5vh;
+}
+.cbd .cbd1-img-con img {
+  width: 100%;
+}
+.cbd .main {
+  padding: 2vh 5vw;
+}
+.cbd .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.cbd .main .desc {
+  padding: .5vw;
+}
+.cbd .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.cbd .main .center-content {
+  padding: 4vh 4vw;
+}
+.cbd .main .center-content p {
+  text-align: center;
+  font-size: 2.8vh;
+}
+.cbd .main .intro {
+  padding: .5vw;
+}
+.cbd .main .intro p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.cbd .main .box .box-highlight {
+  margin-top: -2vh;
+  overflow: hidden;
+  color: #00AB98;
+  font-size: 4.5vw;
+  border: 2px solid #00AB98;
+  position: absolute;
+  font-weight: bold;
+  padding: 4vh 2vw;
+  width: 40vw;
+  height: 20vh;
+}
+.cbd .main .box .box-highlight span {
+  display: block;
+  width: 100%;
+  font-size: 5vh;
+}
+.cbd .main .box .box-highlight span:nth-child(2) {
+  text-indent: 25%;
+}
+.cbd .main .box .box-highlight span:nth-child(3) {
+  text-indent: 50%;
+}
+.cbd .main .cbd2 img {
+  width: 100%;
+}
+.cbd .main .cbd3 {
+  margin-top: 7vh;
+}
+.cbd .main .cbd3 img {
+  width: 100%;
+}
+.cbd .main .cbd4 .cbd4-desc {
+  margin-top: -3vh;
+  margin-bottom: 4vh;
+  font-size: 2.5vh;
+}
+.cbd .main .cbd4 .cbd4FirstRow,
+.cbd .main .cbd4 .cbd4ThirdRow {
+  padding: 0vh 3vw;
+  margin-top: -3vh;
+}
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round {
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.cbd .main .cbd4 .cbd4FirstRow .round img,
+.cbd .main .cbd4 .cbd4ThirdRow .round img {
+  width: 50%;
+  height: 12vh;
+}
+.cbd .main .cbd4 .cbd4ThirdRow {
+  margin-top: 2vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow {
+  margin: 3vh 0vw;
+}
+.cbd .main .cbd4 .cbd4SecondRow .round {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.cbd .main .cbd4 .cbd4SecondRow .round img {
+  width: 50%;
+  height: 13vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow .middle-icon {
+  width: 92%;
+  margin-top: -4vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow .middle-icon img {
+  width: 72%;
+  height: 20vh;
+  padding-left: .5vw;
+}
+.cbd .main .cbd4 .cbd4FirstRow p,
+.cbd .main .cbd4 .cbd4SecondRow p,
+.cbd .main .cbd4 .cbd4ThirdRow p {
+  text-align: center;
+  font-size: 2.3vh;
+  line-height: 3vh;
+  color: #333333;
+}
+.cbd .main .cbd5 img,
+.cbd .main .cbd6 img {
+  width: 90%;
+}
+.cbd .main .cbd7 img {
+  height: 35vh;
+  width: 90%;
+}
+.cbd .backdrop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -30%;
+  z-index: -1;
+}
+
+/* ===================
+    GARDEN CITY
+ ================== */
+.garden-city .main {
+  margin: 5vh 5vw;
+}
+.garden-city .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.garden-city .main .desc {
+  padding: .5vw;
+}
+.garden-city .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: center;
+  line-height: 4.5vh;
+}
+.garden-city .main img {
+  width: 50%;
+  height: 8vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.garden-city .main .gc1Row {
+  margin-top: 10vh;
+  margin-left: 3vw;
+}
+.garden-city .main .gc1Row .item {
+  float: left;
+}
+.garden-city .main .gc1Row .item:nth-child(even) {
+  margin-top: -10vh;
+}
+.garden-city .main .gc1Row .item:nth-child(5) .fontsizes {
+  width: 19vh;
+}
+.garden-city .main .gc1Row .round {
+  border-radius: 50%;
+  width: 10vw;
+  margin: auto;
+  border: 0.3em solid #00AB98;
+  text-align: center;
+}
+.garden-city .main .gc1Row .round img {
+  width: 80%;
+  padding: 2.2vh 0vw;
+  margin: auto;
+}
+.garden-city .main .gc1Row p {
+  text-align: center;
+  font-size: 3vh;
+}
+.garden-city .main .gc1Row .fontsizes {
+  font-size: 2.2vh;
+  width: 12vw;
+  margin: auto;
+  padding: 1.5vh;
+}
+.garden-city .main .gc1Row .hide {
+  visibility: hidden;
+}
+.garden-city .main .gc1bottomRow {
+  margin-top: 4vh;
+}
+.garden-city .main .gc2 {
+  margin-top: 2vh;
+}
+.garden-city .main .gc2 img {
+  width: 100%;
+  height: 100%;
+}
+.garden-city .main .gc3Rows {
+  margin: 4vh 4vw;
+}
+.garden-city .main .gc3Rows .gc3FirstRow img,
+.garden-city .main .gc3Rows .gc3SecondRow img {
+  width: 90%;
+  height: 100%;
+}
+
+/* ===================
+    Modern Metropolis
+ ================== */
+.modern-metro .main {
+  margin: 1.8vh 5vw;
+}
+.modern-metro .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.modern-metro .main .mm1Row {
+  margin-top: 5vh;
+}
+.modern-metro .main .mm1Row .round {
+  border-radius: 50%;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.modern-metro .main .mm1Row .round img {
+  width: 50%;
+  min-height: 8.5vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.modern-metro .main .mm1Row .fontsizes {
+  font-size: 2vh;
+  width: 24vw;
+  margin: 1vh auto;
+  text-align: center;
+}
+.modern-metro .main .mm1Row .fleft {
+  float: left;
+}
+.modern-metro .main .mm1Row .fright {
+  float: right;
+}
+.modern-metro .main .mm1Row .center {
+  text-align: center;
+  margin: auto;
+}
+.modern-metro .main .mm2Rows,
+.modern-metro .main .mm3Rows {
+  margin: 2vh 5vw;
+}
+.modern-metro .main .mm2Rows img,
+.modern-metro .main .mm3Rows img {
+  margin: auto;
+}
+.modern-metro .main .mm2Rows .mm2FirstRow,
+.modern-metro .main .mm2Rows .mm2SecondRow,
+.modern-metro .main .mm2Rows .mm3FirstRow,
+.modern-metro .main .mm2Rows .mm3SecondRow,
+.modern-metro .main .mm3Rows .mm2FirstRow,
+.modern-metro .main .mm3Rows .mm2SecondRow,
+.modern-metro .main .mm3Rows .mm3FirstRow,
+.modern-metro .main .mm3Rows .mm3SecondRow {
+  margin-bottom: 1vh;
+}
+.modern-metro .main .mm2Rows .mm2FirstRow img,
+.modern-metro .main .mm2Rows .mm2SecondRow img,
+.modern-metro .main .mm2Rows .mm3FirstRow img,
+.modern-metro .main .mm2Rows .mm3SecondRow img,
+.modern-metro .main .mm3Rows .mm2FirstRow img,
+.modern-metro .main .mm3Rows .mm2SecondRow img,
+.modern-metro .main .mm3Rows .mm3FirstRow img,
+.modern-metro .main .mm3Rows .mm3SecondRow img {
+  width: 90%;
+  margin: auto;
+}
+.modern-metro .main .mm1Row.movetop {
+  margin-top: 2vh;
+}
+.modern-metro .metro {
+  padding-top: 4vh;
+}
+.modern-metro .metro .desc p {
+  margin: 0;
+  font-size: 2.9vh;
+  text-align: center;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+.modern-metro .metro .desc .addsize {
+  font-size: 3.7vh;
+  display: block;
+  text-indent: 0;
+}
+
+/* ===================
+    Convergence Hub
+ ================== */
+.con-hub .main {
+  margin: 5vh 4vw;
+}
+.con-hub .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.con-hub .main .center-content {
+  padding: 2vh 4vw;
+}
+.con-hub .main .center-content p {
+  text-align: center;
+  font-size: 2.8vh;
+  line-height: 2;
+  font-weight: 100;
+  text-indent: 50px;
+}
+.con-hub .main .ch2FirstRow,
+.con-hub .main .ch2SecondRow {
+  margin-bottom: 1vh;
+}
+.con-hub .main .ch2FirstRow img,
+.con-hub .main .ch2SecondRow img {
+  width: 90%;
+}
+.con-hub .main .ch1SecondRow {
+  margin: 10vh;
+}
+.con-hub .main .ch1SecondRow .fontsizes {
+  font-size: 2vh;
+  width: 24vw;
+  margin: 1vh auto;
+  text-align: center;
+}
+.con-hub .main .ch1SecondRow .round {
+  border-radius: 50%;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.con-hub .main .ch1SecondRow .round img {
+  width: 50%;
+  min-height: 8vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.con-hub .main .ch1SecondRow .round img.transportation {
+  width: 41%;
+}
+.con-hub .main .desc {
+  padding: 3.5vw 3.5vw 3.5vw 0;
+}
+.con-hub .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.con-hub .main .ch4FirstRow img,
+.con-hub .main .ch4SecondRow img {
+  height: 35vh;
+  width: 100%;
+}
+.con-hub .main .round {
+  border-radius: 50%;
+  width: 47%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.con-hub .main .round img {
+  width: 60%;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.con-hub .main .fleft {
+  float: left;
+}
+.con-hub .main .fright {
+  float: right;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.history {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+  /* ==================================
+              LATE CHAIRMAN
+     ================================== */
+  /* ==================================
+              FILINVEST BEFORE
+     ================================== */
+  /* ==================================
+             DIST AREA LIST 1
+     ================================== */
+  /* ==================================
+             DIST AREA LIST 2
+     ================================== */
+  /* ==================================
+                  TODAY LOGO
+     ================================== */
+  /* ==================================
+              OFFICE SPACE
+     ================================== */
+  /* ==================================
+              RETAIL SPACE
+     ================================== */
+}
+.history .main {
+  padding: 5vh 5vw;
+}
+.history .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #012d68;
+  padding: 0;
+}
+.history .main .col-100 .desc {
+  text-align: center;
+  font-size: 3.1vh;
+  color: #333333;
+}
+.history .main .col-100 .desc .coloredText {
+  color: #002D66;
+}
+.history .main .col-40 .founder {
+  margin-top: 2vh;
+  padding-left: 5vw;
+  width: 30vw;
+  height: 50vh;
+}
+.history .main .col-60 .desc {
+  margin-top: 5vh;
+  font-size: 3vh;
+  color: #333333;
+}
+.history .main .col-60 .col-70 {
+  padding-top: 5vh;
+}
+.history .main .col-60 .col-70 span:nth-child(1) {
+  font-size: 2.7vh;
+  font-weight: 500;
+  color: #333333;
+}
+.history .main .col-60 .col-70 span:not(:first-child) {
+  font-size: 2.7vh;
+  font-style: italic;
+  color: #333333;
+}
+.history .filinvest-before .col-100 {
+  margin-left: 5vw;
+}
+.history .filinvest-before .col-100 .oldCity {
+  margin-top: 5vh;
+  width: 80vw;
+  height: 60vh;
+}
+.history .filinvest-before .compare {
+  position: absolute;
+}
+.history .area-list1 .col-40 {
+  margin-left: 0vw;
+}
+.history .area-list1 .col-40 .dist-map1 {
+  width: 35vw;
+  height: 73vh;
+}
+.history .area-list1 .col-60 .desc {
+  line-height: 5vh;
+  font-size: 3.2vh;
+  text-transform: uppercase;
+}
+.history .area-list1 .col-60 .desc span {
+  color: #002D66;
+}
+.history .area-list1 .col-60 .col-100 .title {
+  margin-top: 2vh;
+  margin-bottom: 0vh;
+  font-size: 2.5vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.history .area-list1 .col-60 .col-100 span {
+  font-size: 2vh;
+}
+.history .area-list2 .col-40 img {
+  width: 35vw;
+  height: 73vh;
+}
+.history .area-list2 .col-60 {
+  margin-top: 3vh;
+  margin-left: -10vw;
+}
+.history .area-list2 .col-60 .desc {
+  font-size: 3.2vh;
+  text-transform: uppercase;
+}
+.history .area-list2 .col-60 .desc span {
+  color: #002D66;
+}
+.history .area-list2 .col-60 .col-100 .title {
+  margin: 2vh 0vh 0vh 0vh;
+  font-size: 2.3vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.history .area-list2 .col-60 .col-100 span {
+  font-size: 2vh;
+}
+.history .today-logo .col-100 .logotoday {
+  padding: 7vh 0vh 0vh 34vh;
+  width: 40vw;
+  height: 40vh;
+}
+.history .today-logo .col-100 .col-70 {
+  margin: auto;
+}
+.history .today-logo .col-100 .subtitle {
+  margin-left: 29vw;
+  margin-top: 2vh;
+  font-size: 3.5vh;
+  color: #2bba9d;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.history .office-space .col-100 {
+  color: #333333;
+  font-size: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+.history .office-space .col-100 h3 {
+  line-height: 1vh;
+  color: #333333;
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+.history .office-space .col-100 .blued {
+  color: #002D66;
+}
+.history .office-space .faded p {
+  line-height: 1vh;
+  color: #585757;
+  font-size: 2vh;
+}
+.history .office-space .building-img img {
+  width: 110%;
+  margin-top: -10vh;
+  margin-left: -5vw;
+}
+.history .retail-space {
+  color: #333333;
+}
+.history .retail-space .blued {
+  color: #002D66;
+  font-size: 3vh;
+  line-height: 1vh;
+  font-weight: 500;
+}
+.history .retail-space .land-area {
+  font-size: 2.8vh;
+}
+.history .retail-space .travel-access {
+  list-style-type: none;
+  font-size: 2.3vh;
+  padding: 0;
+}
+.history .retail-space .city1-img img {
+  width: 110%;
+  margin-left: -2vw;
+  margin-top: -5vh;
+}
+.history .retail-space .city2-img img {
+  width: 110%;
+  margin-left: -2vw;
+  margin-top: -25vh;
+}
+
+.intro-filinvest-city .main, .intro-map-main {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+/* ===================
+    INTRO HOME
+ ================== */
+.home .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: -20vw -10vh;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.home .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(1, 45, 104, 0.4);
+}
+.home .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home #main-home {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 13vw 38vh;
+  background-size: 85vh;
+}
+.home .main {
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+          clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+}
+.home .main .mainMenuList {
+  padding-right: 2.5vw;
+  margin: 20vh 0 0 34vh;
+}
+.home .main .mainMenuList .main-title {
+  margin: auto;
+  display: block;
+}
+.home .main .mainMenuList .main-title p {
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 3vh;
+  color: #444242;
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+}
+.home .main .mainMenuList .main-title .imgLogoText {
+  height: 8vh;
+  display: block;
+  margin: auto;
+}
+.home .main .mainMenuList .col-50 {
+  padding: 2vw 0vw 2vw 0vw;
+}
+.home .main .mainMenuList .link {
+  line-height: 6vh;
+  border-bottom: 1px solid #D9CBB3;
+  font-size: 2.3vh;
+  padding: 3vh 0vh 3vh 2vh;
+}
+.home .main .mainMenuList .link svg {
+  width: 5vw;
+  height: 6vh;
+  float: left;
+  display: block;
+}
+.home .main .mainMenuList .link span {
+  color: #636161;
+  text-transform: uppercase;
+  padding-left: 2.5vh;
+  font-weight: 500;
+}
+.home .main .mainMenuList .link:nth-child(6) {
+  border: 0px;
+}
+.home .main .mainMenuList .link:nth-child(7) {
+  font-size: 2.1vh;
+  line-height: 3vh;
+  border: 0px;
+}
+.home .main .mainMenuList .link:nth-child(even) {
+  border-right: 1px solid #D9CBB3;
+}
+
+/* ===================
+    INTRO FILINVEST CITY
+ ================== */
+.intro-filinvest-city .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.intro-filinvest-city .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(1, 45, 104, 0.4);
+}
+.intro-filinvest-city .backdrop-blind {
+  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.intro-filinvest-city .main {
+  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.intro-filinvest-city .main .intro-home-title {
+  width: 60vw;
+  margin: auto;
+  margin-top: 15vh;
+  margin-left: 28vw;
+}
+.intro-filinvest-city .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.intro-filinvest-city .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
+}
+
+/* ===================
+    INTRO MAP
+ ================== */
+.intro-map-main .intro-map-div .map-area {
+  margin: 10vh 12vw;
+}
+.intro-map-main .intro-map-div .map-area img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+}
+.intro-map-main .intro-map-div .intro-map-desc {
+  text-align: center;
+  font-size: 3vh;
+}
+.intro-map-main .intro-map-div .intro-map-desc span {
+  color: #002D66;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+/* ===========================
+                UP-DEV
+       =========================== */
+.up-dev {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+.up-dev .main {
+  margin: 5vh 6vw;
+}
+.up-dev .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.up-dev .up-dev1 {
+  margin-top: 7vh;
+  margin-left: -0.7vw;
+}
+.up-dev .up-dev1 .secondDiv {
+  border-left: 1px solid #D9CBB3;
+  border-right: 1px solid #D9CBB3;
+  height: 62.5vh;
+}
+.up-dev .up-dev1 .botanika {
+  margin-left: -3vw;
+  width: 29.5vw;
+  height: 55vh;
+}
+.up-dev .up-dev1 .feu {
+  margin-left: 1.3vw;
+  margin-top: 2.4vh;
+  width: 33vw;
+  height: 52.7vh;
+}
+.up-dev .up-dev1 .prime {
+  margin-top: 8.5vh;
+  width: 30vw;
+  height: 47vh;
+}
+.up-dev .up-dev2 .vector {
+  height: 70vh;
+}
+.up-dev .up-dev2 .logos {
+  margin-top: 8vh;
+}
+.up-dev .up-dev2 .logos .parkway,
+.up-dev .up-dev2 .logos .bristol {
+  margin-left: 2vw;
+  height: 23vh;
+  margin-bottom: 5vh;
+}
+.up-dev .up-dev2 .logos .bristol {
+  margin-top: 1vh;
+}
+.up-dev .up-dev2 .logos .secondDivision {
+  margin-left: 2vw;
+  margin-bottom: 5vh;
+}
+.up-dev .up-dev2 .logos .landmark,
+.up-dev .up-dev2 .logos .festival {
+  height: 12vh;
+}
+.up-dev .up-dev2 .logos .studio {
+  margin-top: 1.5vh;
+  height: 10.5vh;
+}
+.up-dev .up-dev2 .logos .festivalDiv {
+  margin-left: 2vw;
+  margin: auto;
+}
+
+/* ==========================
+        DISTRICT COLORS
+   ========================== */
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.districts {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+.districts .main {
+  margin: 5vh 5vw;
+  /* ============================== 
+              FIRST SCREEN
+     ============================== */
+  /* ============================== 
+              NORTH GATE
+     ============================== */
+  /* ============================== 
+              WEST GATE
+     ============================== */
+  /* ============================== 
+              PALMS GATE
+     ============================== */
+  /* ============================== 
+              WOODS DISTRICT
+     ============================== */
+  /* ============================== 
+          SPECTRUM DISTRICT
+     ============================== */
+  /* ============================== 
+              SOUTH STATION
+     ============================== */
+  /* ============================== 
+          CIVIC PLAZA DISTRICT
+     ============================== */
+  /* ============================== 
+          CITY CENTER
+     ============================== */
+  /* ============================== 
+          SOUTH GATE
+     ============================== */
+}
+.districts .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #012d68;
+  padding: 0;
+}
+.districts .main .district-map {
+  margin-top: 10vh;
+}
+.districts .main .district-map .filinvestMap svg {
+  width: 100%;
+  height: 100%;
+}
+.districts .main .district-map .title {
+  margin-bottom: -1.5vh;
+  font-size: 4vh;
+}
+.districts .main .district-map .subtext {
+  font-size: 4vh;
+  font-weight: 400;
+}
+.districts .main .district-map .desc {
+  font-size: 2.2vh;
+  color: #333333;
+}
+.districts .main .col-30 {
+  z-index: -3;
+  margin-top: -12vh;
+  display: none;
+}
+.districts .main .col-30.active {
+  display: block;
+}
+.districts .main .firstDistrict {
+  margin-top: 9vh;
+}
+.districts .main .firstDistrict .coloredText {
+  color: #012d68;
+}
+.districts .main .northDistrict .mapTitle,
+.districts .main .northDistrict .mapSub {
+  color: #8abe25;
+}
+.districts .main .northDistrict .bellevue,
+.districts .main .northDistrict .northgate,
+.districts .main .northDistrict .genpact,
+.districts .main .northDistrict .convergys {
+  width: 12.5vw;
+}
+.districts .main .northDistrict .northgate,
+.districts .main .northDistrict .secondlogo {
+  margin-top: 2vh;
+}
+.districts .main .northDistrict .secondLogo {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.districts .main .northDistrict .onlyLogo {
+  margin: auto;
+}
+.districts .main .westDistrict .mapTitle,
+.districts .main .westDistrict .mapSub {
+  color: #5ba9e7;
+}
+.districts .main .westDistrict .westgate {
+  width: 25vw;
+}
+.districts .main .westDistrict .secondLayer {
+  margin-top: 2.8vh;
+  margin-bottom: 0.5vh;
+}
+.districts .main .westDistrict .secondLayer .studio {
+  width: 12vw;
+}
+.districts .main .westDistrict .secondLayer .sandr {
+  margin-top: -1.3vh;
+  margin-left: 2vw;
+  width: 10vw;
+}
+.districts .main .westDistrict .thirdLayer {
+  margin: auto;
+}
+.districts .main .westDistrict .thirdLayer .benz {
+  margin-top: -0.3vw;
+  margin-left: -3.2vw;
+  width: 7.5vw;
+}
+.districts .main .westDistrict .thirdLayer .meralco {
+  margin: 0.3vw 0vw 0vw -1vw;
+  width: 8vw;
+}
+.districts .main .westDistrict .thirdLayer .caltex {
+  margin-left: 2vw;
+  width: 5.4vw;
+}
+.districts .main .westDistrict .fourthLayer {
+  margin: auto;
+}
+.districts .main .westDistrict .fourthLayer .mazda,
+.districts .main .westDistrict .fourthLayer .kia {
+  width: 13vw;
+}
+.districts .main .westDistrict .fourthLayer .mazda {
+  margin-left: -1vw;
+  margin-top: 1.9vh;
+}
+.districts .main .westDistrict .fourthLayer .kia {
+  margin-left: -1.5vw;
+}
+.districts .main .palmsDistrict .mapTitle,
+.districts .main .palmsDistrict .mapSub {
+  color: #d99f4d;
+}
+.districts .main .palmsDistrict .botanika {
+  width: 25vw;
+}
+.districts .main .palmsDistrict .thepalms,
+.districts .main .palmsDistrict .palmspointe {
+  width: 12vw;
+}
+.districts .main .palmsDistrict .palmspointe {
+  margin-top: 2vh;
+}
+.districts .main .palmsDistrict .thirdLayer {
+  margin-top: 1.5vh;
+}
+.districts .main .palmsDistrict .thirdLayer .thelevels,
+.districts .main .palmsDistrict .thirdLayer .hyundai {
+  width: 12vw;
+}
+.districts .main .palmsDistrict .thirdLayer .hyundai {
+  margin-top: 1vh;
+}
+.districts .main .woodsDistrict .mapTitle,
+.districts .main .woodsDistrict .mapSub {
+  color: #e87f32;
+}
+.districts .main .woodsDistrict .firstLayer {
+  margin-left: -1.5vw;
+}
+.districts .main .woodsDistrict .firstLayer .feu {
+  margin-left: 1.2vw;
+  width: 13vw;
+}
+.districts .main .woodsDistrict .firstLayer .doh {
+  margin-left: -2vw;
+  width: 18vw;
+}
+.districts .main .specDistrict .mapTitle,
+.districts .main .specDistrict .mapSub {
+  color: #ebb847;
+}
+.districts .main .specDistrict .firstLayer {
+  margin-top: -2.5vh;
+}
+.districts .main .specDistrict .firstLayer .bristol {
+  margin-left: -1vw;
+  width: 14vw;
+}
+.districts .main .specDistrict .firstLayer .parkway {
+  margin-left: 0.5vw;
+  margin-top: -0.6vh;
+  width: 12vw;
+}
+.districts .main .specDistrict .tent {
+  margin-left: -1.1vw;
+  width: 15vw;
+}
+.districts .main .specDistrict .acacia {
+  margin-top: 1vh;
+}
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
+  width: 12vw;
+}
+.districts .main .specDistrict .insular {
+  margin-left: 4vw;
+  width: 7vw;
+}
+.districts .main .specDistrict .commerce {
+  margin-top: 1vh;
+  width: 12vw;
+}
+.districts .main .southStationDistrict .mapTitle,
+.districts .main .southStationDistrict .mapSub {
+  color: #ba84db;
+}
+.districts .main .southStationDistrict .southstation {
+  margin: 3.5vh auto auto 8vh;
+  width: 10.5vw;
+}
+.districts .main .civicDistrict .mapTitle,
+.districts .main .civicDistrict .mapSub {
+  color: #52cf71;
+}
+.districts .main .civicDistrict .asian {
+  width: 25vw;
+}
+.districts .main .civicDistrict .crimson {
+  width: 28vw;
+}
+.districts .main .civicDistrict .crimson {
+  margin-top: -3vh;
+}
+.districts .main .civicDistrict .entrata,
+.districts .main .civicDistrict .fda {
+  width: 11vw;
+}
+.districts .main .civicDistrict .fda {
+  margin-left: 1vw;
+  margin-top: 2vh;
+}
+.districts .main .cityCenter .mapTitle,
+.districts .main .cityCenter .mapSub {
+  color: #f3784d;
+}
+.districts .main .cityCenter img {
+  width: 100%;
+}
+.districts .main .southGate .mapTitle,
+.districts .main .southGate .mapSub {
+  color: #F892A1;
+}
+
+.fast-facts, .ceo-statement, .awards {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.fast-facts .main {
+  padding: 5vh 5vw;
+}
+.fast-facts .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.fast-facts .icons span {
+  margin-right: 2vw;
+}
+.fast-facts .icons svg {
+  height: 9vh;
+  width: auto;
+}
+.fast-facts .icons svg.active path,
+.fast-facts .icons svg.active polygon {
+  fill: #00AB98;
+}
+.fast-facts .tabs-container {
+  overflow: hidden;
+}
+.fast-facts .tabs-container .tab-title h1 {
+  font-size: 4vw;
+  font-weight: 100;
+}
+.fast-facts .tabs-container .tab-desc {
+  font-size: 2.4vw;
+  color: #333333;
+}
+.fast-facts .tabs-container .tab-desc span {
+  color: #00AB98;
+}
+.fast-facts .img-container {
+  position: relative;
+}
+.fast-facts .img-container #filinvest-icon {
+  display: none;
+  position: absolute;
+  width: 7vw;
+  top: 20vh;
+  left: 22vw;
+}
+.fast-facts .img-container #filinvest-icon.active {
+  display: block;
+}
+.fast-facts .img-container #fast-facts-map {
+  width: 100%;
+  height: auto;
+}
+.fast-facts .img-container .map .dynamic path {
+  display: none;
+}
+.fast-facts .img-container .map .dynamic path.active {
+  display: block;
+  -webkit-animation: dash 25s linear infinite;
+          animation: dash 25s linear infinite;
+}
+.fast-facts .img-container .map .dynamic path.major_roads {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container span {
+  display: none;
+  position: absolute;
+}
+.fast-facts .img-container span.active {
+  display: block;
+}
+.fast-facts .img-container .text.areanearby {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fast-facts .img-container .text.areanearby .cavite {
+  top: 40vh;
+  left: 7vw;
+}
+.fast-facts .img-container .text.areanearby .paranaque {
+  top: 12vh;
+  left: 17vw;
+}
+.fast-facts .img-container .text.areanearby .laspinas {
+  top: 29vh;
+  left: 14vw;
+}
+.fast-facts .img-container .text.areanearby .lagunadebay {
+  top: 30vh;
+  left: 37vw;
+}
+.fast-facts .img-container .text.areanearby .muntinlupa {
+  top: 41vh;
+  left: 26vw;
+}
+.fast-facts .img-container .text.areanearby .laguna {
+  top: 63vh;
+  left: 22vw;
+}
+.fast-facts .img-container .text.major_roads {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fast-facts .img-container .text.major_roads .alabang-zapote {
+  top: 27vh;
+  left: 12vw;
+}
+.fast-facts .img-container .text.major_roads .metromanila {
+  top: 12vh;
+  left: 22vw;
+}
+.fast-facts .img-container .text.major_roads .slex {
+  top: 3vh;
+  left: 34vw;
+}
+.fast-facts .img-container .text.major_roads .olh {
+  top: 33vh;
+  left: 36vw;
+}
+.fast-facts .img-container .text.major_roads .dhr {
+  top: 41vh;
+  left: 15vw;
+}
+.fast-facts .img-container .text.major_roads .mcx {
+  top: 51vh;
+  left: 27vw;
+}
+
+.ceo-statement .main {
+  padding: 5vh 5vw;
+}
+.ceo-statement .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.ceo-statement .center {
+  margin: 0 auto;
+  font-size: 2.4vw;
+  color: #333333;
+  text-align: center;
+}
+.ceo-statement .center span {
+  color: #00AB98;
+}
+.ceo-statement .statement {
+  text-align: justify;
+  font-size: 2.2vw;
+  padding-top: 2vh;
+}
+.ceo-statement .statement .ceo-details {
+  font-size: 1.8vw;
+}
+.ceo-statement .statement .ceo-details span {
+  display: block;
+}
+.ceo-statement .statement .ceo-details span:first-child {
+  font-weight: bold;
+}
+.ceo-statement .statement img {
+  width: 100%;
+}
+.ceo-statement .statement p {
+  color: #333333;
+}
+
+.awards .main {
+  padding: 5vh 5vw;
+}
+.awards .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding-bottom: 2vh;
+}
+.awards .outer-row {
+  font-size: 2.4vw;
+  color: #333333;
+}
+.awards .outer-row .inner-row {
+  margin-top: 3vh;
+}
+.awards .outer-row .inner-row .stmt {
+  font-size: 2.2vw;
+  line-height: 200%;
+}
+.awards .outer-row span {
+  color: #00AB98;
+}
+.awards img {
+  width: 100%;
+}
+.awards .asia-pacific img {
+  display: block;
+  width: 60%;
+  margin: -5vh auto;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.fontsizel {
+  font-size: 4vh;
+}
+
+.teal {
+  color: #00AB98;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 3vh 0;
+  margin-bottom: 0;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.cbd, .garden-city, .modern-metro, .con-hub {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+/* ===================
+    Main MENU
+ ================== */
+.fourPillarsMenu .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/four-pillars/Copy of _KAI4013.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.fourPillarsMenu .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.fourPillarsMenu .backdrop-blind {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.fourPillarsMenu .main {
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+}
+.fourPillarsMenu .main .pillarDiv {
+  display: block;
+}
+.fourPillarsMenu .main .pillarDiv .tag-title h1 {
+  font-size: 6.5vw;
+  text-align: center;
+  color: #00AB98;
+  padding: 0vw 0vw 3.5vw 7vw;
+}
+.fourPillarsMenu .main .pillars-outer {
+  margin-left: 9%;
+  margin-right: 1%;
+  display: block;
+  text-align: center;
+  width: 90%;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner {
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3vw;
+  -webkit-box-shadow: inset 0 0 0 2px transparent;
+          box-shadow: inset 0 0 0 2px transparent;
+  position: relative;
+  vertical-align: middle;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(1) {
+  padding-right: 4vw;
+  padding-left: 3vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(2) {
+  padding-left: 4vw;
+  padding-right: 6vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) {
+  padding-right: 3vw;
+  padding-left: 2vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) .number {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(3) .name {
+  padding-top: 2.5vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) {
+  padding-right: 1vw;
+  padding-left: 1.5vw;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) .number {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar:nth-child(4) .name {
+  margin-top: -2vh;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.ripple {
+  position: relative;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  content: '';
+  position: absolute;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar .number {
+  font-size: 10vw;
+  color: #00AB98;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar .name {
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 3vh;
+  letter-spacing: 1.5px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar span {
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  font-weight: 500;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.bottomTop::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.leftRight::after {
+  bottom: 0;
+  left: 0;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw.rightLeft::before {
+  bottom: 0;
+  right: 0;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded::after {
+  width: 100%;
+  height: 100%;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop::before {
+  border-left-color: #D9CBB3;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop.first::before {
+  -webkit-transition: height 0.25s linear 0.25s;
+  transition: height 0.25s linear 0.25s;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.bottomTop.second::before {
+  -webkit-transition: height 0.25s ease-out 0.49s;
+  transition: height 0.25s ease-out 0.49s;
+}
+.fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.rightLeft::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.loaded.leftRight::after {
+  border-bottom-color: #D9CBB3;
+  -webkit-transition: width 0.25s linear 0.25s;
+  transition: width 0.25s linear 0.25s;
+}
+
+/* ===================
+    PREMIERE CBD
+ ================== */
+.cbd {
+  font-family: ubuntu;
+}
+.cbd .cbd1-img-con {
+  margin: 4vh 5vh;
+}
+.cbd .cbd1-img-con img {
+  width: 100%;
+}
+.cbd .main {
+  padding: 2vh 5vw;
+}
+.cbd .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.cbd .main .desc {
+  padding: .5vw;
+}
+.cbd .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.cbd .main .center-content {
+  padding: 4vh 4vw;
+}
+.cbd .main .center-content p {
+  text-align: center;
+  font-size: 2.8vh;
+}
+.cbd .main .intro {
+  padding: .5vw;
+}
+.cbd .main .intro p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.cbd .main .box .box-highlight {
+  margin-top: -2vh;
+  overflow: hidden;
+  color: #00AB98;
+  font-size: 4.5vw;
+  border: 2px solid #00AB98;
+  position: absolute;
+  font-weight: bold;
+  padding: 4vh 2vw;
+  width: 40vw;
+  height: 20vh;
+}
+.cbd .main .box .box-highlight span {
+  display: block;
+  width: 100%;
+  font-size: 5vh;
+}
+.cbd .main .box .box-highlight span:nth-child(2) {
+  text-indent: 25%;
+}
+.cbd .main .box .box-highlight span:nth-child(3) {
+  text-indent: 50%;
+}
+.cbd .main .cbd2 img {
+  width: 100%;
+}
+.cbd .main .cbd3 {
+  margin-top: 7vh;
+}
+.cbd .main .cbd3 img {
+  width: 100%;
+}
+.cbd .main .cbd4 .cbd4-desc {
+  margin-top: -3vh;
+  margin-bottom: 4vh;
+  font-size: 2.5vh;
+}
+.cbd .main .cbd4 .cbd4FirstRow,
+.cbd .main .cbd4 .cbd4ThirdRow {
+  padding: 0vh 3vw;
+  margin-top: -3vh;
+}
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round {
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.cbd .main .cbd4 .cbd4FirstRow .round img,
+.cbd .main .cbd4 .cbd4ThirdRow .round img {
+  width: 50%;
+  height: 12vh;
+}
+.cbd .main .cbd4 .cbd4ThirdRow {
+  margin-top: 2vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow {
+  margin: 3vh 0vw;
+}
+.cbd .main .cbd4 .cbd4SecondRow .round {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.cbd .main .cbd4 .cbd4SecondRow .round img {
+  width: 50%;
+  height: 13vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow .middle-icon {
+  width: 92%;
+  margin-top: -4vh;
+}
+.cbd .main .cbd4 .cbd4SecondRow .middle-icon img {
+  width: 72%;
+  height: 20vh;
+  padding-left: .5vw;
+}
+.cbd .main .cbd4 .cbd4FirstRow p,
+.cbd .main .cbd4 .cbd4SecondRow p,
+.cbd .main .cbd4 .cbd4ThirdRow p {
+  text-align: center;
+  font-size: 2.3vh;
+  line-height: 3vh;
+  color: #333333;
+}
+.cbd .main .cbd5 img,
+.cbd .main .cbd6 img {
+  width: 90%;
+}
+.cbd .main .cbd7 img {
+  height: 35vh;
+  width: 90%;
+}
+.cbd .backdrop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -30%;
+  z-index: -1;
+}
+
+/* ===================
+    GARDEN CITY
+ ================== */
+.garden-city .main {
+  margin: 5vh 5vw;
+}
+.garden-city .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.garden-city .main .desc {
+  padding: .5vw;
+}
+.garden-city .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: center;
+  line-height: 4.5vh;
+}
+.garden-city .main img {
+  width: 50%;
+  height: 8vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.garden-city .main .gc1Row {
+  margin-top: 10vh;
+  margin-left: 3vw;
+}
+.garden-city .main .gc1Row .item {
+  float: left;
+}
+.garden-city .main .gc1Row .item:nth-child(even) {
+  margin-top: -10vh;
+}
+.garden-city .main .gc1Row .item:nth-child(5) .fontsizes {
+  width: 19vh;
+}
+.garden-city .main .gc1Row .round {
+  border-radius: 50%;
+  width: 10vw;
+  margin: auto;
+  border: 0.3em solid #00AB98;
+  text-align: center;
+}
+.garden-city .main .gc1Row .round img {
+  width: 80%;
+  padding: 2.2vh 0vw;
+  margin: auto;
+}
+.garden-city .main .gc1Row p {
+  text-align: center;
+  font-size: 3vh;
+}
+.garden-city .main .gc1Row .fontsizes {
+  font-size: 2.2vh;
+  width: 12vw;
+  margin: auto;
+  padding: 1.5vh;
+}
+.garden-city .main .gc1Row .hide {
+  visibility: hidden;
+}
+.garden-city .main .gc1bottomRow {
+  margin-top: 4vh;
+}
+.garden-city .main .gc2 {
+  margin-top: 2vh;
+}
+.garden-city .main .gc2 img {
+  width: 100%;
+  height: 100%;
+}
+.garden-city .main .gc3Rows {
+  margin: 4vh 4vw;
+}
+.garden-city .main .gc3Rows .gc3FirstRow img,
+.garden-city .main .gc3Rows .gc3SecondRow img {
+  width: 90%;
+  height: 100%;
+}
+
+/* ===================
+    Modern Metropolis
+ ================== */
+.modern-metro .main {
+  margin: 1.8vh 5vw;
+}
+.modern-metro .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.modern-metro .main .mm1Row {
+  margin-top: 5vh;
+}
+.modern-metro .main .mm1Row .round {
+  border-radius: 50%;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.modern-metro .main .mm1Row .round img {
+  width: 50%;
+  min-height: 8.5vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.modern-metro .main .mm1Row .fontsizes {
+  font-size: 2vh;
+  width: 24vw;
+  margin: 1vh auto;
+  text-align: center;
+}
+.modern-metro .main .mm1Row .fleft {
+  float: left;
+}
+.modern-metro .main .mm1Row .fright {
+  float: right;
+}
+.modern-metro .main .mm1Row .center {
+  text-align: center;
+  margin: auto;
+}
+.modern-metro .main .mm2Rows,
+.modern-metro .main .mm3Rows {
+  margin: 2vh 5vw;
+}
+.modern-metro .main .mm2Rows img,
+.modern-metro .main .mm3Rows img {
+  margin: auto;
+}
+.modern-metro .main .mm2Rows .mm2FirstRow,
+.modern-metro .main .mm2Rows .mm2SecondRow,
+.modern-metro .main .mm2Rows .mm3FirstRow,
+.modern-metro .main .mm2Rows .mm3SecondRow,
+.modern-metro .main .mm3Rows .mm2FirstRow,
+.modern-metro .main .mm3Rows .mm2SecondRow,
+.modern-metro .main .mm3Rows .mm3FirstRow,
+.modern-metro .main .mm3Rows .mm3SecondRow {
+  margin-bottom: 1vh;
+}
+.modern-metro .main .mm2Rows .mm2FirstRow img,
+.modern-metro .main .mm2Rows .mm2SecondRow img,
+.modern-metro .main .mm2Rows .mm3FirstRow img,
+.modern-metro .main .mm2Rows .mm3SecondRow img,
+.modern-metro .main .mm3Rows .mm2FirstRow img,
+.modern-metro .main .mm3Rows .mm2SecondRow img,
+.modern-metro .main .mm3Rows .mm3FirstRow img,
+.modern-metro .main .mm3Rows .mm3SecondRow img {
+  width: 90%;
+  margin: auto;
+}
+.modern-metro .main .mm1Row.movetop {
+  margin-top: 2vh;
+}
+.modern-metro .metro {
+  padding-top: 4vh;
+}
+.modern-metro .metro .desc p {
+  margin: 0;
+  font-size: 2.9vh;
+  text-align: center;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+.modern-metro .metro .desc .addsize {
+  font-size: 3.7vh;
+  display: block;
+  text-indent: 0;
+}
+
+/* ===================
+    Convergence Hub
+ ================== */
+.con-hub .main {
+  margin: 5vh 4vw;
+}
+.con-hub .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.con-hub .main .center-content {
+  padding: 2vh 4vw;
+}
+.con-hub .main .center-content p {
+  text-align: center;
+  font-size: 2.8vh;
+  line-height: 2;
+  font-weight: 100;
+  text-indent: 50px;
+}
+.con-hub .main .ch2FirstRow,
+.con-hub .main .ch2SecondRow {
+  margin-bottom: 1vh;
+}
+.con-hub .main .ch2FirstRow img,
+.con-hub .main .ch2SecondRow img {
+  width: 90%;
+}
+.con-hub .main .ch1SecondRow {
+  margin: 10vh;
+}
+.con-hub .main .ch1SecondRow .fontsizes {
+  font-size: 2vh;
+  width: 24vw;
+  margin: 1vh auto;
+  text-align: center;
+}
+.con-hub .main .ch1SecondRow .round {
+  border-radius: 50%;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.con-hub .main .ch1SecondRow .round img {
+  width: 50%;
+  min-height: 8vh;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.con-hub .main .ch1SecondRow .round img.transportation {
+  width: 41%;
+}
+.con-hub .main .desc {
+  padding: 3.5vw 3.5vw 3.5vw 0;
+}
+.con-hub .main .desc p {
+  margin: 0;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 4.5vh;
+}
+.con-hub .main .ch4FirstRow img,
+.con-hub .main .ch4SecondRow img {
+  height: 35vh;
+  width: 100%;
+}
+.con-hub .main .round {
+  border-radius: 50%;
+  width: 47%;
+  height: 60%;
+  margin: auto;
+  border: 4px solid #00AB98;
+  text-align: center;
+}
+.con-hub .main .round img {
+  width: 60%;
+  padding: 2.2vh 2.2vw;
+  margin: auto;
+}
+.con-hub .main .fleft {
+  float: left;
+}
+.con-hub .main .fright {
+  float: right;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+.history {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+  /* ==================================
+              LATE CHAIRMAN
+     ================================== */
+  /* ==================================
+              FILINVEST BEFORE
+     ================================== */
+  /* ==================================
+             DIST AREA LIST 1
+     ================================== */
+  /* ==================================
+             DIST AREA LIST 2
+     ================================== */
+  /* ==================================
+                  TODAY LOGO
+     ================================== */
+  /* ==================================
+              OFFICE SPACE
+     ================================== */
+  /* ==================================
+              RETAIL SPACE
+     ================================== */
+}
+.history .main {
+  padding: 5vh 5vw;
+}
+.history .main .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #012d68;
+  padding: 0;
+}
+.history .main .col-100 .desc {
+  text-align: center;
+  font-size: 3.1vh;
+  color: #333333;
+}
+.history .main .col-100 .desc .coloredText {
+  color: #002D66;
+}
+.history .main .col-40 .founder {
+  margin-top: 2vh;
+  padding-left: 5vw;
+  width: 30vw;
+  height: 50vh;
+}
+.history .main .col-60 .desc {
+  margin-top: 5vh;
+  font-size: 3vh;
+  color: #333333;
+}
+.history .main .col-60 .col-70 {
+  padding-top: 5vh;
+}
+.history .main .col-60 .col-70 span:nth-child(1) {
+  font-size: 2.7vh;
+  font-weight: 500;
+  color: #333333;
+}
+.history .main .col-60 .col-70 span:not(:first-child) {
+  font-size: 2.7vh;
+  font-style: italic;
+  color: #333333;
+}
+.history .filinvest-before .col-100 {
+  margin-left: 5vw;
+}
+.history .filinvest-before .col-100 .oldCity {
+  margin-top: 5vh;
+  width: 80vw;
+  height: 60vh;
+}
+.history .filinvest-before .compare {
+  position: absolute;
+}
+.history .area-list1 .col-40 {
+  margin-left: 0vw;
+}
+.history .area-list1 .col-40 .dist-map1 {
+  width: 35vw;
+  height: 73vh;
+}
+.history .area-list1 .col-60 .desc {
+  line-height: 5vh;
+  font-size: 3.2vh;
+  text-transform: uppercase;
+}
+.history .area-list1 .col-60 .desc span {
+  color: #002D66;
+}
+.history .area-list1 .col-60 .col-100 .title {
+  margin-top: 2vh;
+  margin-bottom: 0vh;
+  font-size: 2.5vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.history .area-list1 .col-60 .col-100 span {
+  font-size: 2vh;
+}
+.history .area-list2 .col-40 img {
+  width: 35vw;
+  height: 73vh;
+}
+.history .area-list2 .col-60 {
+  margin-top: 3vh;
+  margin-left: -10vw;
+}
+.history .area-list2 .col-60 .desc {
+  font-size: 3.2vh;
+  text-transform: uppercase;
+}
+.history .area-list2 .col-60 .desc span {
+  color: #002D66;
+}
+.history .area-list2 .col-60 .col-100 .title {
+  margin: 2vh 0vh 0vh 0vh;
+  font-size: 2.3vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.history .area-list2 .col-60 .col-100 span {
+  font-size: 2vh;
+}
+.history .today-logo .col-100 .logotoday {
+  padding: 7vh 0vh 0vh 34vh;
+  width: 40vw;
+  height: 40vh;
+}
+.history .today-logo .col-100 .col-70 {
+  margin: auto;
+}
+.history .today-logo .col-100 .subtitle {
+  margin-left: 29vw;
+  margin-top: 2vh;
+  font-size: 3.5vh;
+  color: #2bba9d;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.history .office-space .col-100 {
+  color: #333333;
+  font-size: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+.history .office-space .col-100 h3 {
+  line-height: 1vh;
+  color: #333333;
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+.history .office-space .col-100 .blued {
+  color: #002D66;
+}
+.history .office-space .faded p {
+  line-height: 1vh;
+  color: #585757;
+  font-size: 2vh;
+}
+.history .office-space .building-img img {
+  width: 110%;
+  margin-top: -10vh;
+  margin-left: -5vw;
+}
+.history .retail-space {
+  color: #333333;
+}
+.history .retail-space .blued {
+  color: #002D66;
+  font-size: 3vh;
+  line-height: 1vh;
+  font-weight: 500;
+}
+.history .retail-space .land-area {
+  font-size: 2.8vh;
+}
+.history .retail-space .travel-access {
+  list-style-type: none;
+  font-size: 2.3vh;
+  padding: 0;
+}
+.history .retail-space .city1-img img {
+  width: 110%;
+  margin-left: -2vw;
+  margin-top: -5vh;
+}
+.history .retail-space .city2-img img {
+  width: 110%;
+  margin-left: -2vw;
+  margin-top: -25vh;
+}
+
+.intro-filinvest-city .main, .intro-map-main {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
+/* ===================
+    INTRO HOME
+ ================== */
+.home .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: -20vw -10vh;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.home .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(1, 45, 104, 0.4);
+}
+.home .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home #main-home {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 13vw 38vh;
+  background-size: 85vh;
+}
+.home .main {
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+          clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+}
+.home .main .mainMenuList {
+  padding-right: 2.5vw;
+  margin: 20vh 0 0 34vh;
+}
+.home .main .mainMenuList .main-title {
+  margin: auto;
+  display: block;
+}
+.home .main .mainMenuList .main-title p {
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 3vh;
+  color: #444242;
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+}
+.home .main .mainMenuList .main-title .imgLogoText {
+  height: 8vh;
+  display: block;
+  margin: auto;
+}
+.home .main .mainMenuList .col-50 {
+  padding: 2vw 0vw 2vw 0vw;
+}
+.home .main .mainMenuList .link {
+  line-height: 6vh;
+  border-bottom: 1px solid #D9CBB3;
+  font-size: 2.3vh;
+  padding: 3vh 0vh 3vh 2vh;
+}
+.home .main .mainMenuList .link svg {
+  width: 5vw;
+  height: 6vh;
+  float: left;
+  display: block;
+}
+.home .main .mainMenuList .link span {
+  color: #636161;
+  text-transform: uppercase;
+  padding-left: 2.5vh;
+  font-weight: 500;
+}
+.home .main .mainMenuList .link:nth-child(6) {
+  border: 0px;
+}
+.home .main .mainMenuList .link:nth-child(7) {
+  font-size: 2.1vh;
+  line-height: 3vh;
+  border: 0px;
+}
+.home .main .mainMenuList .link:nth-child(even) {
+  border-right: 1px solid #D9CBB3;
+}
+
+/* ===================
+    INTRO FILINVEST CITY
+ ================== */
+.intro-filinvest-city .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.intro-filinvest-city .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(1, 45, 104, 0.4);
+}
+.intro-filinvest-city .backdrop-blind {
+  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.intro-filinvest-city .main {
+  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.intro-filinvest-city .main .intro-home-title {
+  width: 60vw;
+  margin: auto;
+  margin-top: 15vh;
+  margin-left: 28vw;
+}
+.intro-filinvest-city .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.intro-filinvest-city .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
+}
+
+/* ===================
+    INTRO MAP
+ ================== */
+.intro-map-main .intro-map-div .map-area {
+  margin: 10vh 12vw;
+}
+.intro-map-main .intro-map-div .map-area img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+}
+.intro-map-main .intro-map-div .intro-map-desc {
+  text-align: center;
+  font-size: 3vh;
+}
+.intro-map-main .intro-map-div .intro-map-desc span {
+  color: #002D66;
+}
+
+.districts .main .tag-title h1, .fast-facts .main .tag-title h1, .ceo-statement .main .tag-title h1, .awards .main .tag-title h1, .fourPillarsMenu .main .pillarDiv .tag-title h1, .cbd .main .tag-title h1, .garden-city .main .tag-title h1, .modern-metro .main .tag-title h1, .con-hub .main .tag-title h1, .history .main .tag-title h1, .up-dev .tag-title h1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+.districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
+  font-weight: 100;
+}
+
+/* ===========================
+                UP-DEV
+       =========================== */
+.up-dev {
+  background-image: url("../img/bg_emblem.png");
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+.up-dev .main {
+  margin: 5vh 6vw;
+}
+.up-dev .tag-title h1 {
+  font-size: 6vw;
+  text-align: left;
+  color: #00AB98;
+  padding: 0;
+}
+.up-dev .up-dev1 {
+  margin-top: 7vh;
+  margin-left: -0.7vw;
+}
+.up-dev .up-dev1 .secondDiv {
+  border-left: 1px solid #D9CBB3;
+  border-right: 1px solid #D9CBB3;
+  height: 62.5vh;
+}
+.up-dev .up-dev1 .botanika {
+  margin-left: -3vw;
+  width: 29.5vw;
+  height: 55vh;
+}
+.up-dev .up-dev1 .feu {
+  margin-left: 1.3vw;
+  margin-top: 2.4vh;
+  width: 33vw;
+  height: 52.7vh;
+}
+.up-dev .up-dev1 .prime {
+  margin-top: 8.5vh;
+  width: 30vw;
+  height: 47vh;
+}
+.up-dev .up-dev2 .vector {
+  height: 70vh;
+}
+.up-dev .up-dev2 .logos {
+  margin-top: 8vh;
+}
+.up-dev .up-dev2 .logos .parkway,
+.up-dev .up-dev2 .logos .bristol {
+  margin-left: 2vw;
+  height: 23vh;
+  margin-bottom: 5vh;
+}
+.up-dev .up-dev2 .logos .bristol {
+  margin-top: 1vh;
+}
+.up-dev .up-dev2 .logos .secondDivision {
+  margin-left: 2vw;
+  margin-bottom: 5vh;
+}
+.up-dev .up-dev2 .logos .landmark,
+.up-dev .up-dev2 .logos .festival {
+  height: 12vh;
+}
+.up-dev .up-dev2 .logos .studio {
+  margin-top: 1.5vh;
+  height: 10.5vh;
+}
+.up-dev .up-dev2 .logos .festivalDiv {
+  margin-left: 2vw;
+  margin: auto;
+}

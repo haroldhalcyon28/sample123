@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.959402in" height="0.878886in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 231 211"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#00AB98}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,211 231,211 143,73 88,73 "/>
+  <polygon class="fil1" points="128,73 124,73 126,80 130,80 "/>
+  <polygon class="fil1" points="131,85 127,85 130,93 134,93 "/>
+  <polygon class="fil1" points="135,98 130,98 133,105 137,105 "/>
+  <polygon class="fil1" points="139,114 135,114 137,122 141,122 "/>
+  <polygon class="fil1" points="143,131 139,131 141,141 146,141 "/>
+  <polygon class="fil1" points="148,149 142,149 146,162 151,162 "/>
+  <polygon class="fil1" points="154,171 148,171 152,187 158,187 "/>
+  <polygon class="fil1" points="160,195 152,195 157,211 165,211 "/>
+  <polygon class="fil1" points="104,73 108,73 106,80 102,80 "/>
+  <polygon class="fil1" points="100,85 104,85 102,93 98,93 "/>
+  <polygon class="fil1" points="97,98 101,98 99,105 95,105 "/>
+  <polygon class="fil1" points="93,114 97,114 95,122 90,122 "/>
+  <polygon class="fil1" points="88,131 93,131 90,141 85,141 "/>
+  <polygon class="fil1" points="84,149 89,149 86,162 80,162 "/>
+  <polygon class="fil1" points="77,171 84,171 80,187 73,187 "/>
+  <polygon class="fil1" points="71,195 79,195 75,211 67,211 "/>
+  <polygon class="fil1" points="93,73 96,73 27,211 20,211 "/>
+  <polygon class="fil1" points="139,73 136,73 205,211 212,211 "/>
+  <rect class="fil0" x="27" width="8" height="97" rx="4" ry="4"/>
+  <rect class="fil0" x="27" width="178" height="9" rx="4" ry="4"/>
+  <rect class="fil0" x="197" width="8" height="97" rx="4" ry="4"/>
+  <rect class="fil0" x="43" width="146" height="48" rx="5" ry="5"/>
+  <rect class="fil0" x="27" y="40" width="178" height="9" rx="4" ry="4"/>
+  <rect class="fil1" x="55" y="19" width="30" height="9"/>
+  <rect class="fil1" x="100" y="19" width="30" height="9"/>
+  <rect class="fil1" x="143" y="19" width="30" height="9"/>
+ </g>
+</svg>
