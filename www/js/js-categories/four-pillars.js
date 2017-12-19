@@ -89,35 +89,35 @@ app.onPageInit('cbd4', function (page) {
     var tl = TweenMax;
 
     //title
-    tl.from(" h1", .7, { opacity: 0, y: "50"}, 0.1 );
-    tl.from(".firstAnim", 1, { opacity: 0, delay: 0.8, y:"10px"}, 0.1);
+    tl.from(" h1", .7, { opacity: 0, y: "50"} );
+    tl.from(".firstAnim", .3, { opacity: 0, delay: 0.6, y:"20px"} );
 
     //middle icon
-    tl.from(".middle", 1, { scale: 0.5, delay: 1.4, opacity: 0, ease: Elastic.easeOut, force3D: true }, 0.5);
+    tl.from(".middle", 1, { scale: 0.5, delay: 0.7, opacity: 0, ease: Elastic.easeOut, force3D: true }, 0.5);
     
     //middle layer left
-    tl.from(".midLayerLeftTop", 0.5, { opacity: 0, delay: 1.8, y: "50px" , x: "30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".midLayerLeft", 0.5, { opacity: 0, delay: 1.8, x: "30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".midLayerLeftBot", 0.5, { opacity: 0, delay: 1.8, y: "-50px" , x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerLeftTop", 0.5, { opacity: 0, delay: 1, y: "50px" , x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerLeft", 0.5, { opacity: 0, delay: 1, x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerLeftBot", 0.5, { opacity: 0, delay: 1, y: "-50px" , x: "30px", ease: Power1.easeOut }, 0.5);
 
     //middle layer right
-    tl.from(".midLayerRightTop", 0.5, { opacity: 0, delay: 1.8, y: "50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".midLayerRight", 0.5, { opacity: 0, delay: 1.8, x: "-30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".midLayerRightBot", 0.5, { opacity: 0, delay: 1.8, y: "-50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerRightTop", 0.5, { opacity: 0, delay: 1, y: "50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerRight", 0.5, { opacity: 0, delay: 1, x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerRightBot", 0.5, { opacity: 0, delay: 1, y: "-50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
 
     //outer layer left
-    tl.from(".outLayerLeftTop", 0.5, { opacity: 0, delay: 2.2, x: "30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".outLayerLeft", 0.5, { opacity: 0, delay: 2.2, x: "30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".outLayerLeftBot", 0.5, { opacity: 0, delay: 2.2 , x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerLeftTop", 0.5, { opacity: 0, delay: 1.4, x: "60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerLeft", 0.5, { opacity: 0, delay: 1.4, x: "60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerLeftBot", 0.5, { opacity: 0, delay: 1.4 , x: "60px", ease: Power1.easeOut }, 0.5);
 
     //outer layer right
-    tl.from(".outLayerRightTop", 0.5, { opacity: 0, delay: 2.2, x: "-30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".outLayerRight", 0.5, { opacity: 0, delay: 2.2, x: "-30px", ease: Power1.easeOut }, 0.5);
-    tl.from(".outLayerRightBot", 0.5, { opacity: 0, delay: 2.2 , x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerRightTop", 0.5, { opacity: 0, delay: 1.4, x: "-60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerRight", 0.5, { opacity: 0, delay: 1.4, x: "-60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerRightBot", 0.5, { opacity: 0, delay: 1.4 , x: "-60px", ease: Power1.easeOut }, 0.5);
 
-    tl.from(".cbd4SecondRow p", 0.5, { opacity: 0, delay: 2.7, ease: Power1.easeOut }, 0.5);
-    tl.from(".cbd4FirstRow p", 0.5, { opacity: 0, delay: 2.7, ease: Power1.easeOut }, 0.5);
-    tl.from(".cbd4ThirdRow p", 0.5, { opacity: 0, delay: 2.7, ease: Power1.easeOut }, 0.5);
+    tl.from(".cbd4SecondRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
+    tl.from(".cbd4FirstRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
+    tl.from(".cbd4ThirdRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
 
     $$('.round').click(function () {
         var target = $$(this);
@@ -125,8 +125,7 @@ app.onPageInit('cbd4', function (page) {
         var imgDesc = target.closest(".desc").find('.fontsizes').text();
         var basePath = 'img/four-pillars/premiere-cbd/';
 
-        //alert(imgDesc);
-
+        ///parse to JSON
         var imgArr = JSON.parse(imgName);
         var picsArr = [];
 
@@ -236,6 +235,12 @@ app.onPageInit('garden-city1', function (page) {
 
 app.onPageInit('modern-metro1', function (page) {
 
+    var tl = TweenMax;
+    var desc = $$(".item .fontsizes");
+    
+    tl.from(".firstDiv", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut} )
+    tl.from(".secondDiv", .4, { opacity: 0, delay: 0.6, y: "50", ease: Power1.easeOut} )
+
     $$('.round').click(function () {
 
         var target = $$(this);
@@ -278,6 +283,11 @@ app.onPageInit('modern-metro1', function (page) {
 
 app.onPageInit('con-hub1', function (page) {
 
+    var tl = TweenMax;
+    var desc =  $$(".item .fontsizes");
+    
+    tl.from(".item", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut } );
+    ///tl.from(desc, .3, { opacity: 0, delay: 0.8, y: "50" } );
 
     $$('.round').on('click', function () {
 

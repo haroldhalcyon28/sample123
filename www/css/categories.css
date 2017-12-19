@@ -213,30 +213,29 @@
 }
 .districts .main .specDistrict .firstLayer .bristol {
   margin-left: -1vw;
-  width: 14vw;
+  width: 12vw;
 }
 .districts .main .specDistrict .firstLayer .parkway {
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   margin-top: -0.6vh;
-  width: 12vw;
+  width: 11vw;
 }
 .districts .main .specDistrict .tent {
   margin-left: -1.1vw;
-  width: 15vw;
+  width: 13vw;
 }
 .districts .main .specDistrict .acacia {
-  margin-top: 1vh;
+  margin-top: 0.3vh;
 }
-.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
-  width: 12vw;
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia, .districts .main .specDistrict .commerce {
+  width: 11vw;
 }
 .districts .main .specDistrict .insular {
   margin-left: 4vw;
-  width: 7vw;
+  width: 6.5vw;
 }
 .districts .main .specDistrict .commerce {
   margin-top: 1vh;
-  width: 12vw;
 }
 .districts .main .southStationDistrict .mapTitle,
 .districts .main .southStationDistrict .mapSub {
@@ -339,6 +338,8 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
+  -webkit-animation: fadeIn 1s linear forwards;
+          animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
@@ -348,6 +349,8 @@
 .fast-facts .img-container .map .dynamic path,
 .fast-facts .img-container .map .dynamic polygon {
   display: none;
+  -webkit-animation: fadeIn .5s linear forwards;
+          animation: fadeIn .5s linear forwards;
 }
 .fast-facts .img-container .map .dynamic path.active,
 .fast-facts .img-container .map .dynamic polygon.active {
@@ -362,10 +365,9 @@
           animation: dash 25s linear infinite;
 }
 .fast-facts .img-container .map .dynamic .muntinlupa {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  -webkit-animation: draw 1s linear forwards;
-          animation: draw 1s linear forwards;
+  stroke-dasharray: 14360.7;
+  -webkit-animation: draw 2s linear forwards;
+          animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -523,7 +525,7 @@
 }
 @-webkit-keyframes draw {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 14360.7;
   }
   to {
     stroke-dashoffset: 0;
@@ -531,10 +533,26 @@
 }
 @keyframes draw {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 14360.7;
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .fontsizel {
@@ -552,6 +570,12 @@
 }
 .districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
   font-weight: 100;
+}
+
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
+  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -728,7 +752,7 @@
     PREMIERE CBD
  ================== */
 .cbd {
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 .cbd .cbd1-img-con {
   margin: 4vh 5vh;
@@ -737,7 +761,7 @@
   width: 100%;
 }
 .cbd .main {
-  padding: 2vh 5vw;
+  margin: 5vh 5vw;
 }
 .cbd .main .tag-title h1 {
   font-size: 6vw;
@@ -771,7 +795,7 @@
   line-height: 4.5vh;
 }
 .cbd .main .box .box-highlight {
-  margin-top: -2vh;
+  margin-top: 0vh;
   overflow: hidden;
   color: #00AB98;
   font-size: 4.5vw;
@@ -793,6 +817,9 @@
 .cbd .main .box .box-highlight span:nth-child(3) {
   text-indent: 50%;
 }
+.cbd .main .cbd2 {
+  margin-top: 5vh;
+}
 .cbd .main .cbd2 img {
   width: 100%;
 }
@@ -803,14 +830,14 @@
   width: 100%;
 }
 .cbd .main .cbd4 .cbd4-desc {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
   font-size: 2.5vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow,
 .cbd .main .cbd4 .cbd4ThirdRow {
   padding: 0vh 3vw;
-  margin-top: -3vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round {
@@ -827,10 +854,10 @@
   height: 12vh;
 }
 .cbd .main .cbd4 .cbd4ThirdRow {
-  margin-top: 2vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4SecondRow {
-  margin: 3vh 0vw;
+  margin: -1vh 0vw;
 }
 .cbd .main .cbd4 .cbd4SecondRow .round {
   border-radius: 50%;
@@ -969,7 +996,7 @@
     Modern Metropolis
  ================== */
 .modern-metro .main {
-  margin: 1.8vh 5vw;
+  margin: 1vh 5vw;
 }
 .modern-metro .main .tag-title h1 {
   font-size: 6vw;
@@ -978,7 +1005,8 @@
   padding: 0;
 }
 .modern-metro .main .mm1Row {
-  margin-top: 5vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
 }
 .modern-metro .main .mm1Row .round {
   border-radius: 50%;
@@ -1065,7 +1093,7 @@
   color: black;
 }
 .con-hub .main {
-  margin: 5vh 4vw;
+  margin: 5vh 5vw;
 }
 .con-hub .main .tag-title h1 {
   font-size: 6vw;
@@ -1092,12 +1120,14 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 5vw 0vw 0vw 5vw;
+  margin: 5vw 0vw 0vw 8vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
   font-size: 2.5vh;
-  width: 34vw;
-  margin: 1vh 0vh 0vh -5vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  text-indent: 0px;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -1297,11 +1327,12 @@
   margin: auto;
 }
 .history .today-logo .col-100 .subtitle {
-  margin-left: 29vw;
-  margin-top: 2vh;
+  margin: 1vh 0vh -2vh 0vh;
+  width: 100%;
   font-size: 3.5vh;
   color: #2bba9d;
   letter-spacing: 3px;
+  text-align: center;
   font-weight: 500;
 }
 .history .office-space .col-100 {
@@ -1320,11 +1351,12 @@
 }
 .history .office-space .faded p {
   line-height: 1vh;
-  color: #585757;
+  color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img img {
-  width: 110%;
+.history .office-space .building-img svg {
+  width: auto;
+  height: 70vh;
   margin-top: -10vh;
   margin-left: -5vw;
 }
@@ -1345,15 +1377,17 @@
   font-size: 2.3vh;
   padding: 0;
 }
-.history .retail-space .city1-img img {
-  width: 110%;
+.history .retail-space .city1-img svg {
+  height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
+  width: 50vw;
 }
-.history .retail-space .city2-img img {
-  width: 110%;
+.history .retail-space .city2-img svg {
   margin-left: -2vw;
-  margin-top: -25vh;
+  margin-top: -20vh;
+  width: 45vw;
+  height: 100%;
 }
 
 /* ===================
@@ -1475,7 +1509,8 @@
   top: 0;
   left: 0;
   z-index: -3;
-  background-position: 0;
+  background-position: -25vw -5vh;
+  background-size: contain;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -1510,13 +1545,21 @@
   width: 60vw;
   margin: auto;
 }
+.intro-filinvest-city .main .intro-home-title .filcity {
+  font-size: 5vh;
+  color: #333333;
+  font-weight: 100;
+}
+.intro-filinvest-city .main .intro-home-title .coloredText {
+  color: #002D66;
+}
 .intro-filinvest-city .main .intro-home-title img {
-  width: 40vw;
-  margin-left: 10vw;
+  width: 35vw;
+  margin-left: 12vw;
 }
 .intro-filinvest-city .main .intro-home-title p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 3.8vh;
 }
 
 /* ===================
@@ -1631,7 +1674,8 @@
   top: 0;
   left: 0;
   z-index: -3;
-  background-position: 0;
+  background-position: -25vw -5vh;
+  background-size: contain;
 }
 .up-dev3 .backdrop .backdrop-filter {
   height: 100%;
@@ -1882,30 +1926,29 @@
 }
 .districts .main .specDistrict .firstLayer .bristol {
   margin-left: -1vw;
-  width: 14vw;
+  width: 12vw;
 }
 .districts .main .specDistrict .firstLayer .parkway {
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   margin-top: -0.6vh;
-  width: 12vw;
+  width: 11vw;
 }
 .districts .main .specDistrict .tent {
   margin-left: -1.1vw;
-  width: 15vw;
+  width: 13vw;
 }
 .districts .main .specDistrict .acacia {
-  margin-top: 1vh;
+  margin-top: 0.3vh;
 }
-.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
-  width: 12vw;
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia, .districts .main .specDistrict .commerce {
+  width: 11vw;
 }
 .districts .main .specDistrict .insular {
   margin-left: 4vw;
-  width: 7vw;
+  width: 6.5vw;
 }
 .districts .main .specDistrict .commerce {
   margin-top: 1vh;
-  width: 12vw;
 }
 .districts .main .southStationDistrict .mapTitle,
 .districts .main .southStationDistrict .mapSub {
@@ -2008,6 +2051,8 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
+  -webkit-animation: fadeIn 1s linear forwards;
+          animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
@@ -2017,6 +2062,8 @@
 .fast-facts .img-container .map .dynamic path,
 .fast-facts .img-container .map .dynamic polygon {
   display: none;
+  -webkit-animation: fadeIn .5s linear forwards;
+          animation: fadeIn .5s linear forwards;
 }
 .fast-facts .img-container .map .dynamic path.active,
 .fast-facts .img-container .map .dynamic polygon.active {
@@ -2031,10 +2078,9 @@
           animation: dash 25s linear infinite;
 }
 .fast-facts .img-container .map .dynamic .muntinlupa {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  -webkit-animation: draw 1s linear forwards;
-          animation: draw 1s linear forwards;
+  stroke-dasharray: 14360.7;
+  -webkit-animation: draw 2s linear forwards;
+          animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -2183,10 +2229,18 @@
 }
 @keyframes draw {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 14360.7;
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .fontsizel {
@@ -2204,6 +2258,12 @@
 }
 .districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
   font-weight: 100;
+}
+
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
+  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -2381,7 +2441,7 @@
     PREMIERE CBD
  ================== */
 .cbd {
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 .cbd .cbd1-img-con {
   margin: 4vh 5vh;
@@ -2390,7 +2450,7 @@
   width: 100%;
 }
 .cbd .main {
-  padding: 2vh 5vw;
+  margin: 5vh 5vw;
 }
 .cbd .main .tag-title h1 {
   font-size: 6vw;
@@ -2424,7 +2484,7 @@
   line-height: 4.5vh;
 }
 .cbd .main .box .box-highlight {
-  margin-top: -2vh;
+  margin-top: 0vh;
   overflow: hidden;
   color: #00AB98;
   font-size: 4.5vw;
@@ -2446,6 +2506,9 @@
 .cbd .main .box .box-highlight span:nth-child(3) {
   text-indent: 50%;
 }
+.cbd .main .cbd2 {
+  margin-top: 5vh;
+}
 .cbd .main .cbd2 img {
   width: 100%;
 }
@@ -2456,14 +2519,14 @@
   width: 100%;
 }
 .cbd .main .cbd4 .cbd4-desc {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
   font-size: 2.5vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow,
 .cbd .main .cbd4 .cbd4ThirdRow {
   padding: 0vh 3vw;
-  margin-top: -3vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round {
@@ -2480,10 +2543,10 @@
   height: 12vh;
 }
 .cbd .main .cbd4 .cbd4ThirdRow {
-  margin-top: 2vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4SecondRow {
-  margin: 3vh 0vw;
+  margin: -1vh 0vw;
 }
 .cbd .main .cbd4 .cbd4SecondRow .round {
   border-radius: 50%;
@@ -2622,7 +2685,7 @@
     Modern Metropolis
  ================== */
 .modern-metro .main {
-  margin: 1.8vh 5vw;
+  margin: 1vh 5vw;
 }
 .modern-metro .main .tag-title h1 {
   font-size: 6vw;
@@ -2631,7 +2694,8 @@
   padding: 0;
 }
 .modern-metro .main .mm1Row {
-  margin-top: 5vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
 }
 .modern-metro .main .mm1Row .round {
   border-radius: 50%;
@@ -2718,7 +2782,7 @@
   color: black;
 }
 .con-hub .main {
-  margin: 5vh 4vw;
+  margin: 5vh 5vw;
 }
 .con-hub .main .tag-title h1 {
   font-size: 6vw;
@@ -2745,12 +2809,14 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 5vw 0vw 0vw 5vw;
+  margin: 5vw 0vw 0vw 8vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
   font-size: 2.5vh;
-  width: 34vw;
-  margin: 1vh 0vh 0vh -5vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  text-indent: 0px;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -2950,11 +3016,12 @@
   margin: auto;
 }
 .history .today-logo .col-100 .subtitle {
-  margin-left: 29vw;
-  margin-top: 2vh;
+  margin: 1vh 0vh -2vh 0vh;
+  width: 100%;
   font-size: 3.5vh;
   color: #2bba9d;
   letter-spacing: 3px;
+  text-align: center;
   font-weight: 500;
 }
 .history .office-space .col-100 {
@@ -2973,11 +3040,12 @@
 }
 .history .office-space .faded p {
   line-height: 1vh;
-  color: #585757;
+  color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img img {
-  width: 110%;
+.history .office-space .building-img svg {
+  width: auto;
+  height: 70vh;
   margin-top: -10vh;
   margin-left: -5vw;
 }
@@ -2998,15 +3066,17 @@
   font-size: 2.3vh;
   padding: 0;
 }
-.history .retail-space .city1-img img {
-  width: 110%;
+.history .retail-space .city1-img svg {
+  height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
+  width: 50vw;
 }
-.history .retail-space .city2-img img {
-  width: 110%;
+.history .retail-space .city2-img svg {
   margin-left: -2vw;
-  margin-top: -25vh;
+  margin-top: -20vh;
+  width: 45vw;
+  height: 100%;
 }
 
 /* ===================
@@ -3129,7 +3199,8 @@
   top: 0;
   left: 0;
   z-index: -3;
-  background-position: 0;
+  background-position: -25vw -5vh;
+  background-size: contain;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -3164,13 +3235,21 @@
   width: 60vw;
   margin: auto;
 }
+.intro-filinvest-city .main .intro-home-title .filcity {
+  font-size: 5vh;
+  color: #333333;
+  font-weight: 100;
+}
+.intro-filinvest-city .main .intro-home-title .coloredText {
+  color: #002D66;
+}
 .intro-filinvest-city .main .intro-home-title img {
-  width: 40vw;
-  margin-left: 10vw;
+  width: 35vw;
+  margin-left: 12vw;
 }
 .intro-filinvest-city .main .intro-home-title p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 3.8vh;
 }
 
 /* ===================
@@ -3286,7 +3365,8 @@
   top: 0;
   left: 0;
   z-index: -3;
-  background-position: 0;
+  background-position: -25vw -5vh;
+  background-size: contain;
 }
 .up-dev3 .backdrop .backdrop-filter {
   height: 100%;

@@ -53,9 +53,8 @@ app.onPageInit('home', function (page) {
     intro-filinvest-city
   ================================  */
 app.onPageInit('intro-filinvest-city', function (page) {
-
-
-
+    var first = tl.fromTo('.backdrop-blind', 1, { y: 0 }, { y: "-100%" })
+    .to('.backdrop-filter', .5, { opacity: 0 });
 })
 
 
@@ -64,7 +63,6 @@ app.onPageInit('intro-filinvest-city', function (page) {
     intro-map
   ================================  */
 app.onPageInit('intro-map', function (page) {
-
     var enlargeMap = app.photoBrowser({
         theme: 'light',
         expositionHideCaptions: true,

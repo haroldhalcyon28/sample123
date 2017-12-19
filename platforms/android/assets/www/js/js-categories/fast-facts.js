@@ -1,5 +1,3 @@
-
-
 /* ===============================
     areas-nearby
   ================================  */
@@ -12,7 +10,10 @@
 /* ===============================
     fast-facts
   ================================  */
-app.onPageInit('fast-facts', function (page) {
+$$(document).on('pageInit', '.page[data-page="fast-facts"]', function (page) {
+    // $$(".muntinlupa").addClass('draw');
+    console.log($$(".muntinlupa"));
+    // console.log($$(".muntinlupa").getTotalLength());
     $$(".fast-facts .icons span").on('click', function (e) {
         var $span = $$(this);
         var link = $span.attr('href');
@@ -20,7 +21,7 @@ app.onPageInit('fast-facts', function (page) {
         var prev = 0;
         var $prev_tab = $$(".tab.active");
         var $svg = $span.find('svg');
-        var $showables = $$(".map .dynamic ." + link + ", .img-container ." + link + " span, .img-container ." + link);
+        var $showables = $$(".map .dynamic ." + link + ", .img-container .dynamic ." + link + " path, .img-container .dynamic ." + link + " polygon , .img-container ." + link);
         var $active_showables = $$(".map .dynamic .active, .img-container .active");
         if (!$svg.hasClass('active')) {
             //remove active class from svg and tab
@@ -39,7 +40,7 @@ app.onPageInit('fast-facts', function (page) {
             //add active class to tab
             $$("#" + link).addClass('active');
             var $active_tab = $$(".tab.active");
-            
+
             //add active class to showables
             $showables.addClass('active');
             //get currently active tab

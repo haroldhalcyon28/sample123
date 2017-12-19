@@ -1,5 +1,3 @@
-
-
 //pages restricted for tap
 var pagesRestrictedTap = ['home', 'intro-filinvest-city', 'fourPillarsMenu'];
 
@@ -7,7 +5,7 @@ var pagesRestrictedTap = ['home', 'intro-filinvest-city', 'fourPillarsMenu'];
 var pagesRestrictedSwipe = ['home', 'fourPillarsMenu'];
 
 //classes restricted for tap
-var classRestrictedTap = ['triangle-child', 'action-box','diagonal-border'];
+var classRestrictedTap = ['triangle-child', 'action-box', 'diagonal-border'];
 
 
 //folder and subfolder
@@ -109,6 +107,8 @@ mc.on("tap swiperight swipeleft", function (e) {
         var path = '';
         var outOfBounds = false;
         var outOfBounds2 = false;
+        var delayFlag = false;
+        var delay = 0;
 
         //check if page has subcategory attribute
         if (typeof subcategoryName !== typeof undefined && subcategoryName != null) {
@@ -135,11 +135,11 @@ mc.on("tap swiperight swipeleft", function (e) {
                     if (direction == 1) newIndex = 0;
                     else newIndex = categoryPages.length - 1;
                     subcategoryPages = categoryPages;
+                    delayFlag = true;
                 }
             } else {
                 newIndex = subcategoryCurrIndex + direction;
             }
-
             newPage = subcategoryPages[newIndex];
             if (outOfBounds2) path = 'pages/' + categoryFolder.replace(/_/g, '-') + '/' + newPage + '.html';
             else path = 'pages/' + categoryFolder + '/' + subcategoryName + '/' + newPage + '.html';
@@ -151,6 +151,7 @@ mc.on("tap swiperight swipeleft", function (e) {
                 categoryPages = eval(categoryFolder);
                 if (direction == 1) newIndex = 0;
                 else newIndex = categoryPages.length - 1;
+                delayFlag = true;
             } else {
                 newIndex = currIndex + direction;
             }
@@ -165,7 +166,17 @@ mc.on("tap swiperight swipeleft", function (e) {
                 path = 'pages/' + categoryFolder.replace(/_/g, '-') + '/' + subcategoryName + '/' + newPage + '.html';
             } else path = 'pages/' + categoryFolder.replace(/_/g, '-') + '/' + newPage + '.html';
         }
-        mainView.router.loadPage(path);
+        if (delayFlag) {
+            tl.to('#upper-right-triangle', .5, { top: "-=550" })
+                .to('#bottom-right-triangle, .action-box', .5, { bottom: "-=550" }, "-=.5")
+                .to('#bottom-left-triangle, #bottom-second-left-triangle', .5, { bottom: "-=550" }, "-=.5");
+            delay = 700;
+        }
+        else delay = 0;
+        setTimeout(function () {
+
+            mainView.router.loadPage(path);
+        }, delay);
     }
 
     if (e.type == 'tap') {
@@ -210,7 +221,7 @@ function check_position(_index, _length, _direction, subcategory) {
     // console.log("direction: " + _direction);
 
     //check if on subcategory folder
-    if(subcategory) var x = 0;
+    if (subcategory) var x = 0;
     else var x = 1;
 
     if (_direction == 1) {

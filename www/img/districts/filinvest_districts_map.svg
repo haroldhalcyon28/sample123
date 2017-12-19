@@ -18,7 +18,7 @@ viewBox="0 0 7799 4671"
     .fil1 {fill:#F6765A;fill-rule:nonzero}
     .fil6 {fill:#F892A1;fill-rule:nonzero}
     .fil2 {fill:white;fill-rule:nonzero}
-    .filz {fill: gray;fill-rule:nonzero}
+    .filz {fill-opacity: 0.3;fill-rule:nonzero}
    ]]>
   </style>
  </defs>
