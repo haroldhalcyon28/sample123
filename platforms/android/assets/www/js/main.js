@@ -130,11 +130,6 @@ $$(document).on('page:init', function (e) {
             }, 1500);
         });
 
-
-        //reposition triangles to initial incase of rapid navigation
-        $$("#upper-right-triangle").css('top', 0);
-        $$("#bottom-right-triangle, #bottom-second-left-triangle, #bottom-left-triangle").css('bottom', 0);
-
         //animate triangles
         var tl = new TimelineLite();
 
@@ -143,8 +138,8 @@ $$(document).on('page:init', function (e) {
             setTimeout(function () {
                 tl.fromTo('#upper-right-triangle', .5, { top: "-=550" }, { top: -1 })
                     .fromTo('#bottom-right-triangle, .action-box', .5, { bottom: "-=550" }, { bottom: -1 }, "-=.5")
-                    .fromTo('#bottom-left-triangle', .5, { bottom: "-=550" }, { bottom: 0 }, "-=.5");
-            }, 1200);
+                    .fromTo('#bottom-left-triangle, #bottom-second-left-triangle', .5, { bottom: "-=550" }, { bottom: 0 }, "-=.5");
+            }, 1500);
 
         }
 
@@ -172,7 +167,7 @@ $$(document).on('page:init', function (e) {
             setTimeout(function () {
                 //transit
                 mainView.router.loadPage('pages/' + url);
-            }, 1500);
+            }, 1000);
         });
 
         // Home button as div

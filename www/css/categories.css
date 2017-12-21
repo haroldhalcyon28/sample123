@@ -305,10 +305,13 @@
 .fast-facts .icons span {
   margin-right: 2vw;
 }
+.fast-facts .icons img,
 .fast-facts .icons svg {
   height: 9vh;
   width: auto;
 }
+.fast-facts .icons img.active path,
+.fast-facts .icons img.active polygon,
 .fast-facts .icons svg.active path,
 .fast-facts .icons svg.active polygon {
   fill: #00AB98;
@@ -648,6 +651,7 @@
   width: 90%;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
+  margin-top: 3vh;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
@@ -705,7 +709,7 @@
   font-size: 3vw;
   text-align: center;
   padding-top: 3vh;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
   color: #333333;
   font-weight: 500;
   line-height: 1.2;
@@ -1472,7 +1476,7 @@
   font-size: 2.3vh;
   padding: 3vh 0vh 3vh 2vh;
 }
-.home .main .mainMenuList .link svg {
+.home .main .mainMenuList .link img, .home .main .mainMenuList .link svg {
   width: 5vw;
   height: 6vh;
   float: left;
@@ -1511,6 +1515,7 @@
   z-index: -3;
   background-position: -25vw -5vh;
   background-size: contain;
+  height: 105%;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -1565,19 +1570,19 @@
 /* ===================
     INTRO MAP
  ================== */
-.intro-map-main .intro-map-div .map-area {
+.intro-map-main .main .map-area {
   margin: 10vh 12vw;
 }
-.intro-map-main .intro-map-div .map-area img {
+.intro-map-main .main .map-area img {
   width: 100%;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
 }
-.intro-map-main .intro-map-div .intro-map-desc {
+.intro-map-main .main .intro-map-desc {
   text-align: center;
   font-size: 3vh;
 }
-.intro-map-main .intro-map-div .intro-map-desc span {
+.intro-map-main .main .intro-map-desc span {
   color: #002D66;
 }
 
@@ -2018,10 +2023,13 @@
 .fast-facts .icons span {
   margin-right: 2vw;
 }
+.fast-facts .icons img,
 .fast-facts .icons svg {
   height: 9vh;
   width: auto;
 }
+.fast-facts .icons img.active path,
+.fast-facts .icons img.active polygon,
 .fast-facts .icons svg.active path,
 .fast-facts .icons svg.active polygon {
   fill: #00AB98;
@@ -2337,6 +2345,7 @@
   width: 90%;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
+  margin-top: 3vh;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
@@ -2394,7 +2403,7 @@
   font-size: 3vw;
   text-align: center;
   padding-top: 3vh;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
   color: #333333;
   font-weight: 500;
   line-height: 1.2;
@@ -3161,7 +3170,7 @@
   font-size: 2.3vh;
   padding: 3vh 0vh 3vh 2vh;
 }
-.home .main .mainMenuList .link svg {
+.home .main .mainMenuList .link img, .home .main .mainMenuList .link svg {
   width: 5vw;
   height: 6vh;
   float: left;
@@ -3201,6 +3210,7 @@
   z-index: -3;
   background-position: -25vw -5vh;
   background-size: contain;
+  height: 105%;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -3255,19 +3265,19 @@
 /* ===================
     INTRO MAP
  ================== */
-.intro-map-main .intro-map-div .map-area {
+.intro-map-main .main .map-area {
   margin: 10vh 12vw;
 }
-.intro-map-main .intro-map-div .map-area img {
+.intro-map-main .main .map-area img {
   width: 100%;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
 }
-.intro-map-main .intro-map-div .intro-map-desc {
+.intro-map-main .main .intro-map-desc {
   text-align: center;
   font-size: 3vh;
 }
-.intro-map-main .intro-map-div .intro-map-desc span {
+.intro-map-main .main .intro-map-desc span {
   color: #002D66;
 }
 

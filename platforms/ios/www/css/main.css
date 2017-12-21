@@ -1,6 +1,20 @@
 /* Across all pages background and css*/
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
 * {
   font-family: Ubuntu;
+}
+
+.sliding span {
+  color: #333333;
+}
+
+.photo-browser-caption {
+  font-size: 2.9vh;
+  padding: 3vh;
+  text-align: center;
 }
 
 .clearfix {
@@ -152,16 +166,30 @@
   bottom: -0.8vw;
   right: 1vw;
 }
+.action-box .diagonal-border {
+  height: 80%;
+  width: 100%;
+  border-left: 1px solid white;
+  -webkit-transform: rotate(-41deg);
+          transform: rotate(-41deg);
+  position: absolute;
+  top: -3vh;
+  left: 5vw;
+}
 
 .home-button {
   position: absolute;
-  right: 2px;
+  right: -.5vw;
   top: 0;
-  height: auto;
+  width: 5vw;
 }
-.home-button a i {
+.home-button i {
+  width: 100%;
   font-size: 5vh;
   color: #e6e6e6;
+}
+.home-button .ripple-wave {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .page-content {
@@ -169,6 +197,7 @@
 }
 
 .starter {
+  display: none;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -182,24 +211,6 @@
   border-bottom: 1px solid #002D66;
   border-radius: 20px;
   color: #002D66;
-}
-
-.home-loader {
-  display: none;
-  position: absolute;
-  color: gray;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-.home-loader span {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  position: inherit;
-  margin-top: 50vh;
-  font-size: 2.5vh;
 }
 
 .loaderoverlay {

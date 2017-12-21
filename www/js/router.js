@@ -1,5 +1,5 @@
 //pages restricted for tap
-var pagesRestrictedTap = ['home', 'intro-filinvest-city', 'fourPillarsMenu'];
+var pagesRestrictedTap = ['home', 'fourPillarsMenu'];
 
 //pages restricted for swipe
 var pagesRestrictedSwipe = ['home', 'fourPillarsMenu'];
@@ -67,17 +67,17 @@ mc.get('swipe').set({
 var tapStatus = false;
 mc.on("tap swiperight swipeleft", function (e) {
     //get current page element(jQ)
-    var page = $$(e.target).closest('.page');
+    var page = $$(".page.page-on-center");
 
     //get page name
     var pageName = page.attr('data-page');
 
     //check if swipe
     if (e.type.indexOf("swipe") !== -1) {
+        if (pagesRestrictedSwipe.indexOf(pageName) != -1) return;
+        console.log(e);
         //get classes of page
         var pageClassList = page[0].classList;
-
-        if (pagesRestrictedSwipe.indexOf(pageName) != -1) return;
 
         //get category/folder name and subcategory
         var categoryName = page.attr('data-category');
@@ -167,12 +167,17 @@ mc.on("tap swiperight swipeleft", function (e) {
             } else path = 'pages/' + categoryFolder.replace(/_/g, '-') + '/' + newPage + '.html';
         }
         if (delayFlag) {
-            tl.to('#upper-right-triangle', .5, { top: "-=550" })
-                .to('#bottom-right-triangle, .action-box', .5, { bottom: "-=550" }, "-=.5")
-                .to('#bottom-left-triangle, #bottom-second-left-triangle', .5, { bottom: "-=550" }, "-=.5");
-            delay = 700;
+            //animate triangles when EXITING last category
+            if (pageName !== 'up-dev3' && pageName !== 'intro-filinvest-city') {
+                trianglesTransition('-=20%', '-=20%', .8);
+                mainExitAnimation(`[data-page = ${pageName}]`, .7);
+                $$('.speed-dial.speed-dial-opened').removeClass('speed-dial-opened');
+                delay = 700;
+            }
+            
         }
         else delay = 0;
+        TweenLite.to('.main', 700, {right: '-10%'});
         setTimeout(function () {
 
             mainView.router.loadPage(path);
@@ -196,16 +201,15 @@ mc.on("tap swiperight swipeleft", function (e) {
         var callback = function (mutationList) {
             //check if page name exists on restrictions
             if (pagesRestrictedTap.indexOf(pageName) == -1 && !classRestrictionFlag) {
+                
                 if (mutationList.length == 1) {
                     tapStatus = !tapStatus;
                     var x = 0;
-                    if (tapStatus) x = "-=750";
-                    else x = "0";
+                    if (tapStatus) { x = "-=20%"; z = "-=20%"; } 
+                    else { x = "-0.2%"; z = "1%" }
+                    
+                    trianglesTransition(x, z, .8);
 
-                    var tl = new TimelineLite();
-                    tl.to('#upper-right-triangle', .5, { top: x })
-                        .to('#bottom-right-triangle, .action-box', .5, { bottom: x, ease: Power1.easeNone }, "-=.5")
-                        .to('#bottom-left-triangle', .5, { bottom: x, ease: Power1.easeNone }, "-=.5")
                 }
             }
             observer.disconnect();
@@ -216,11 +220,7 @@ mc.on("tap swiperight swipeleft", function (e) {
 });
 
 function check_position(_index, _length, _direction, subcategory) {
-    // console.log("index : " + _index);
-    // console.log("length: " + _length);
-    // console.log("direction: " + _direction);
 
-    //check if on subcategory folder
     if (subcategory) var x = 0;
     else var x = 1;
 
@@ -232,40 +232,23 @@ function check_position(_index, _length, _direction, subcategory) {
     return false;
 }
 
+function trianglesTransition(x, z , duration) {
+    TweenLite.to('#upper-right-triangle', duration, { top: x , ease: Power2.easeInOut })
+    TweenLite.to('#bottom-right-triangle, #bottom-left-triangle', duration, { bottom: x, right: x,  ease: Power2.easeInOut})
+    TweenLite.to('.action-box', duration, { bottom: x, right: z ,  ease: Power2.easeInOut,})
+}
 
-// function swipeEventRoute(category, page, element) {
-//     var myElement = document.getElementById(element);
-//     var mc = new Hammer(myElement);
-//     // console.log(this[category]);
-//     mc.get('swipe').set({
-//         direction: Hammer.DIRECTION_ALL,
-//         velocity: 2 // Swipe must be a little fast
-//     });
+function mainEntranceAnimation (parent, duration) {
+    TweenLite.from(`${parent} .main`, duration, { x: '20%', opacity: 0,  ease: Power2.easeInOut })
+    console.log(`${parent } and ${duration} entrance`);
+}
 
-//     // listen to events...
-//     var tapStatus = false;
-//     mc.on("tap swiperight swipeleft", function (e) {
+function mainExitAnimation(parent, duration) {
+    TweenLite.to(`${parent} .main`, duration, { x: '-20%' , opacity: 0, ease: Power2.easeInOut })
+    console.log(`${parent} and ${duration} exit`);
+}
 
 
-//         if (e.type == 'swipeleft') {
-//             DEBUG.log('swipeleft trigerred');
-//             var nextPath = category.page.next;
-//             mainView.router.loadPage(nextPath);
-//         } else if (e.type == 'swiperight') {
-//             DEBUG.log('swiperight trigerred');
-//             var previousPath = category.page.previous;
-//             mainView.router.loadPage(previousPath);
-//         } else if (e.type == 'tap' && $$(e.target).hasClass('page')) {
-//             tapStatus = !tapStatus;
-//             var x = 0;
-//             if (tapStatus) x = "-=750";
-//             else x = "+=750";
-
-//             tl.to('#upper-right-triangle', .5, { top: x })
-//                 .to('#bottom-right-triangle', .5, { bottom: x, ease: Power1.easeNone }, "-=.5")
-//                 .to('#bottom-left-triangle', .5, { bottom: x, ease: Power1.easeNone }, "-=.5")
-//         }
-
-//     });
-
-// }
+function speedDialClose() {
+    $$('.speed-dial.speed-dial-opened').removeClass('speed-dial-opened');
+}

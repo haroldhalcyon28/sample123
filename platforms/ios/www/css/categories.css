@@ -1,3 +1,11 @@
+.intro-filinvest-city .main, .intro-map-main, .up-dev3 .main {
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 2vw 38vh;
+  background-size: 85vh;
+}
+
 /* ==========================
         DISTRICT COLORS
    ========================== */
@@ -205,30 +213,29 @@
 }
 .districts .main .specDistrict .firstLayer .bristol {
   margin-left: -1vw;
-  width: 14vw;
+  width: 12vw;
 }
 .districts .main .specDistrict .firstLayer .parkway {
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   margin-top: -0.6vh;
-  width: 12vw;
+  width: 11vw;
 }
 .districts .main .specDistrict .tent {
   margin-left: -1.1vw;
-  width: 15vw;
+  width: 13vw;
 }
 .districts .main .specDistrict .acacia {
-  margin-top: 1vh;
+  margin-top: 0.3vh;
 }
-.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
-  width: 12vw;
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia, .districts .main .specDistrict .commerce {
+  width: 11vw;
 }
 .districts .main .specDistrict .insular {
   margin-left: 4vw;
-  width: 7vw;
+  width: 6.5vw;
 }
 .districts .main .specDistrict .commerce {
   margin-top: 1vh;
-  width: 12vw;
 }
 .districts .main .southStationDistrict .mapTitle,
 .districts .main .southStationDistrict .mapSub {
@@ -298,10 +305,13 @@
 .fast-facts .icons span {
   margin-right: 2vw;
 }
+.fast-facts .icons img,
 .fast-facts .icons svg {
   height: 9vh;
   width: auto;
 }
+.fast-facts .icons img.active path,
+.fast-facts .icons img.active polygon,
 .fast-facts .icons svg.active path,
 .fast-facts .icons svg.active polygon {
   fill: #00AB98;
@@ -331,23 +341,36 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
+  -webkit-animation: fadeIn 1s linear forwards;
+          animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
   width: 100%;
   height: auto;
 }
-.fast-facts .img-container .map .dynamic path {
+.fast-facts .img-container .map .dynamic path,
+.fast-facts .img-container .map .dynamic polygon {
   display: none;
+  -webkit-animation: fadeIn .5s linear forwards;
+          animation: fadeIn .5s linear forwards;
 }
-.fast-facts .img-container .map .dynamic path.active {
+.fast-facts .img-container .map .dynamic path.active,
+.fast-facts .img-container .map .dynamic polygon.active {
   display: block;
+}
+.fast-facts .img-container .map .dynamic .road {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container .map .dynamic .road .active {
   -webkit-animation: dash 25s linear infinite;
           animation: dash 25s linear infinite;
 }
-.fast-facts .img-container .map .dynamic path.major_roads {
-  stroke-dasharray: 150;
-  stroke-dashoffset: 4000;
+.fast-facts .img-container .map .dynamic .muntinlupa {
+  stroke-dasharray: 14360.7;
+  -webkit-animation: draw 2s linear forwards;
+          animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -503,6 +526,38 @@
     stroke-dashoffset: 0;
   }
 }
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 14360.7;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 14360.7;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .fontsizel {
   font-size: 4vh;
 }
@@ -518,6 +573,12 @@
 }
 .districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
   font-weight: 100;
+}
+
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
+  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -538,7 +599,6 @@
   background: url("../img/four-pillars/Copy of _KAI4013.jpg");
   background-color: white;
   background-size: cover;
-  background-position: 315% center;
   top: 0;
   left: 0;
   z-index: -3;
@@ -591,6 +651,7 @@
   width: 90%;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
+  margin-top: 3vh;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
@@ -648,7 +709,7 @@
   font-size: 3vw;
   text-align: center;
   padding-top: 3vh;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
   color: #333333;
   font-weight: 500;
   line-height: 1.2;
@@ -695,7 +756,7 @@
     PREMIERE CBD
  ================== */
 .cbd {
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 .cbd .cbd1-img-con {
   margin: 4vh 5vh;
@@ -704,7 +765,7 @@
   width: 100%;
 }
 .cbd .main {
-  padding: 2vh 5vw;
+  margin: 5vh 5vw;
 }
 .cbd .main .tag-title h1 {
   font-size: 6vw;
@@ -738,7 +799,7 @@
   line-height: 4.5vh;
 }
 .cbd .main .box .box-highlight {
-  margin-top: -2vh;
+  margin-top: 0vh;
   overflow: hidden;
   color: #00AB98;
   font-size: 4.5vw;
@@ -760,6 +821,9 @@
 .cbd .main .box .box-highlight span:nth-child(3) {
   text-indent: 50%;
 }
+.cbd .main .cbd2 {
+  margin-top: 5vh;
+}
 .cbd .main .cbd2 img {
   width: 100%;
 }
@@ -770,14 +834,14 @@
   width: 100%;
 }
 .cbd .main .cbd4 .cbd4-desc {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
   font-size: 2.5vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow,
 .cbd .main .cbd4 .cbd4ThirdRow {
   padding: 0vh 3vw;
-  margin-top: -3vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round {
@@ -794,10 +858,10 @@
   height: 12vh;
 }
 .cbd .main .cbd4 .cbd4ThirdRow {
-  margin-top: 2vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4SecondRow {
-  margin: 3vh 0vw;
+  margin: -1vh 0vw;
 }
 .cbd .main .cbd4 .cbd4SecondRow .round {
   border-radius: 50%;
@@ -936,7 +1000,7 @@
     Modern Metropolis
  ================== */
 .modern-metro .main {
-  margin: 1.8vh 5vw;
+  margin: 1vh 5vw;
 }
 .modern-metro .main .tag-title h1 {
   font-size: 6vw;
@@ -945,7 +1009,8 @@
   padding: 0;
 }
 .modern-metro .main .mm1Row {
-  margin-top: 5vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
 }
 .modern-metro .main .mm1Row .round {
   border-radius: 50%;
@@ -1028,8 +1093,11 @@
 /* ===================
     Convergence Hub
  ================== */
+.con-hub .center.sliding span {
+  color: black;
+}
 .con-hub .main {
-  margin: 5vh 4vw;
+  margin: 5vh 5vw;
 }
 .con-hub .main .tag-title h1 {
   font-size: 6vw;
@@ -1056,13 +1124,14 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 10vh;
+  margin: 5vw 0vw 0vw 8vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
-  font-size: 2vh;
-  width: 24vw;
-  margin: 1vh auto;
+  font-size: 2.5vh;
+  width: 100%;
+  margin: auto;
   text-align: center;
+  text-indent: 0px;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -1262,11 +1331,12 @@
   margin: auto;
 }
 .history .today-logo .col-100 .subtitle {
-  margin-left: 29vw;
-  margin-top: 2vh;
+  margin: 1vh 0vh -2vh 0vh;
+  width: 100%;
   font-size: 3.5vh;
   color: #2bba9d;
   letter-spacing: 3px;
+  text-align: center;
   font-weight: 500;
 }
 .history .office-space .col-100 {
@@ -1285,11 +1355,12 @@
 }
 .history .office-space .faded p {
   line-height: 1vh;
-  color: #585757;
+  color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img img {
-  width: 110%;
+.history .office-space .building-img svg {
+  width: auto;
+  height: 70vh;
   margin-top: -10vh;
   margin-left: -5vw;
 }
@@ -1310,23 +1381,17 @@
   font-size: 2.3vh;
   padding: 0;
 }
-.history .retail-space .city1-img img {
-  width: 110%;
+.history .retail-space .city1-img svg {
+  height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
+  width: 50vw;
 }
-.history .retail-space .city2-img img {
-  width: 110%;
+.history .retail-space .city2-img svg {
   margin-left: -2vw;
-  margin-top: -25vh;
-}
-
-.intro-filinvest-city .main, .intro-map-main {
-  background-image: url("../img/bg_emblem.png");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 2vw 38vh;
-  background-size: 85vh;
+  margin-top: -20vh;
+  width: 45vw;
+  height: 100%;
 }
 
 /* ===================
@@ -1411,7 +1476,7 @@
   font-size: 2.3vh;
   padding: 3vh 0vh 3vh 2vh;
 }
-.home .main .mainMenuList .link svg {
+.home .main .mainMenuList .link img, .home .main .mainMenuList .link svg {
   width: 5vw;
   height: 6vh;
   float: left;
@@ -1445,10 +1510,12 @@
   background: url("../img/intro/intro-fil-city_2.jpg");
   background-color: white;
   background-size: cover;
-  background-position: 315% center;
   top: 0;
   left: 0;
   z-index: -3;
+  background-position: -25vw -5vh;
+  background-size: contain;
+  height: 105%;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -1457,54 +1524,65 @@
   background: rgba(1, 45, 104, 0.4);
 }
 .intro-filinvest-city .backdrop-blind {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  top: 0;
   left: 0;
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
   height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
+  padding: 12vh 0;
   width: 60vw;
   margin: auto;
-  margin-top: 15vh;
-  margin-left: 28vw;
+}
+.intro-filinvest-city .main .intro-home-title .filcity {
+  font-size: 5vh;
+  color: #333333;
+  font-weight: 100;
+}
+.intro-filinvest-city .main .intro-home-title .coloredText {
+  color: #002D66;
 }
 .intro-filinvest-city .main .intro-home-title img {
-  width: 40vw;
-  margin-left: 10vw;
+  width: 35vw;
+  margin-left: 12vw;
 }
 .intro-filinvest-city .main .intro-home-title p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 3.8vh;
 }
 
 /* ===================
     INTRO MAP
  ================== */
-.intro-map-main .intro-map-div .map-area {
+.intro-map-main .main .map-area {
   margin: 10vh 12vw;
 }
-.intro-map-main .intro-map-div .map-area img {
+.intro-map-main .main .map-area img {
   width: 100%;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
 }
-.intro-map-main .intro-map-div .intro-map-desc {
+.intro-map-main .main .intro-map-desc {
   text-align: center;
   font-size: 3vh;
 }
-.intro-map-main .intro-map-div .intro-map-desc span {
+.intro-map-main .main .intro-map-desc span {
   color: #002D66;
 }
 
@@ -1589,6 +1667,61 @@
 .up-dev .up-dev2 .logos .festivalDiv {
   margin-left: 2vw;
   margin: auto;
+}
+
+.up-dev3 .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background-position: -25vw -5vh;
+  background-size: contain;
+}
+.up-dev3 .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.up-dev3 .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  left: 0;
+  z-index: -1;
+}
+.up-dev3 .main {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.up-dev3 .main .intro-home-title {
+  padding: 12vh 0;
+  width: 60vw;
+  margin: auto;
+}
+.up-dev3 .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.up-dev3 .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
 }
 
 /* ==========================
@@ -1798,30 +1931,29 @@
 }
 .districts .main .specDistrict .firstLayer .bristol {
   margin-left: -1vw;
-  width: 14vw;
+  width: 12vw;
 }
 .districts .main .specDistrict .firstLayer .parkway {
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   margin-top: -0.6vh;
-  width: 12vw;
+  width: 11vw;
 }
 .districts .main .specDistrict .tent {
   margin-left: -1.1vw;
-  width: 15vw;
+  width: 13vw;
 }
 .districts .main .specDistrict .acacia {
-  margin-top: 1vh;
+  margin-top: 0.3vh;
 }
-.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia {
-  width: 12vw;
+.districts .main .specDistrict .somerset, .districts .main .specDistrict .acacia, .districts .main .specDistrict .commerce {
+  width: 11vw;
 }
 .districts .main .specDistrict .insular {
   margin-left: 4vw;
-  width: 7vw;
+  width: 6.5vw;
 }
 .districts .main .specDistrict .commerce {
   margin-top: 1vh;
-  width: 12vw;
 }
 .districts .main .southStationDistrict .mapTitle,
 .districts .main .southStationDistrict .mapSub {
@@ -1891,10 +2023,13 @@
 .fast-facts .icons span {
   margin-right: 2vw;
 }
+.fast-facts .icons img,
 .fast-facts .icons svg {
   height: 9vh;
   width: auto;
 }
+.fast-facts .icons img.active path,
+.fast-facts .icons img.active polygon,
 .fast-facts .icons svg.active path,
 .fast-facts .icons svg.active polygon {
   fill: #00AB98;
@@ -1924,23 +2059,36 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
+  -webkit-animation: fadeIn 1s linear forwards;
+          animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
   width: 100%;
   height: auto;
 }
-.fast-facts .img-container .map .dynamic path {
+.fast-facts .img-container .map .dynamic path,
+.fast-facts .img-container .map .dynamic polygon {
   display: none;
+  -webkit-animation: fadeIn .5s linear forwards;
+          animation: fadeIn .5s linear forwards;
 }
-.fast-facts .img-container .map .dynamic path.active {
+.fast-facts .img-container .map .dynamic path.active,
+.fast-facts .img-container .map .dynamic polygon.active {
   display: block;
+}
+.fast-facts .img-container .map .dynamic .road {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 4000;
+}
+.fast-facts .img-container .map .dynamic .road .active {
   -webkit-animation: dash 25s linear infinite;
           animation: dash 25s linear infinite;
 }
-.fast-facts .img-container .map .dynamic path.major_roads {
-  stroke-dasharray: 150;
-  stroke-dashoffset: 4000;
+.fast-facts .img-container .map .dynamic .muntinlupa {
+  stroke-dasharray: 14360.7;
+  -webkit-animation: draw 2s linear forwards;
+          animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -2087,6 +2235,22 @@
     stroke-dashoffset: 0;
   }
 }
+@keyframes draw {
+  from {
+    stroke-dashoffset: 14360.7;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .fontsizel {
   font-size: 4vh;
 }
@@ -2102,6 +2266,12 @@
 }
 .districts .main .tag-title h1 span, .fast-facts .main .tag-title h1 span, .ceo-statement .main .tag-title h1 span, .awards .main .tag-title h1 span, .fourPillarsMenu .main .pillarDiv .tag-title h1 span, .cbd .main .tag-title h1 span, .garden-city .main .tag-title h1 span, .modern-metro .main .tag-title h1 span, .con-hub .main .tag-title h1 span, .history .main .tag-title h1 span, .up-dev .tag-title h1 span {
   font-weight: 100;
+}
+
+.cbd .main .cbd4 .cbd4FirstRow .round,
+.cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
+  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -2175,6 +2345,7 @@
   width: 90%;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
+  margin-top: 3vh;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
@@ -2232,7 +2403,7 @@
   font-size: 3vw;
   text-align: center;
   padding-top: 3vh;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
   color: #333333;
   font-weight: 500;
   line-height: 1.2;
@@ -2279,7 +2450,7 @@
     PREMIERE CBD
  ================== */
 .cbd {
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 .cbd .cbd1-img-con {
   margin: 4vh 5vh;
@@ -2288,7 +2459,7 @@
   width: 100%;
 }
 .cbd .main {
-  padding: 2vh 5vw;
+  margin: 5vh 5vw;
 }
 .cbd .main .tag-title h1 {
   font-size: 6vw;
@@ -2322,7 +2493,7 @@
   line-height: 4.5vh;
 }
 .cbd .main .box .box-highlight {
-  margin-top: -2vh;
+  margin-top: 0vh;
   overflow: hidden;
   color: #00AB98;
   font-size: 4.5vw;
@@ -2344,6 +2515,9 @@
 .cbd .main .box .box-highlight span:nth-child(3) {
   text-indent: 50%;
 }
+.cbd .main .cbd2 {
+  margin-top: 5vh;
+}
 .cbd .main .cbd2 img {
   width: 100%;
 }
@@ -2354,14 +2528,14 @@
   width: 100%;
 }
 .cbd .main .cbd4 .cbd4-desc {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
   font-size: 2.5vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow,
 .cbd .main .cbd4 .cbd4ThirdRow {
   padding: 0vh 3vw;
-  margin-top: -3vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round {
@@ -2378,10 +2552,10 @@
   height: 12vh;
 }
 .cbd .main .cbd4 .cbd4ThirdRow {
-  margin-top: 2vh;
+  margin-top: 0vh;
 }
 .cbd .main .cbd4 .cbd4SecondRow {
-  margin: 3vh 0vw;
+  margin: -1vh 0vw;
 }
 .cbd .main .cbd4 .cbd4SecondRow .round {
   border-radius: 50%;
@@ -2520,7 +2694,7 @@
     Modern Metropolis
  ================== */
 .modern-metro .main {
-  margin: 1.8vh 5vw;
+  margin: 1vh 5vw;
 }
 .modern-metro .main .tag-title h1 {
   font-size: 6vw;
@@ -2529,7 +2703,8 @@
   padding: 0;
 }
 .modern-metro .main .mm1Row {
-  margin-top: 5vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
 }
 .modern-metro .main .mm1Row .round {
   border-radius: 50%;
@@ -2612,8 +2787,11 @@
 /* ===================
     Convergence Hub
  ================== */
+.con-hub .center.sliding span {
+  color: black;
+}
 .con-hub .main {
-  margin: 5vh 4vw;
+  margin: 5vh 5vw;
 }
 .con-hub .main .tag-title h1 {
   font-size: 6vw;
@@ -2640,13 +2818,14 @@
   width: 90%;
 }
 .con-hub .main .ch1SecondRow {
-  margin: 10vh;
+  margin: 5vw 0vw 0vw 8vw;
 }
 .con-hub .main .ch1SecondRow .fontsizes {
-  font-size: 2vh;
-  width: 24vw;
-  margin: 1vh auto;
+  font-size: 2.5vh;
+  width: 100%;
+  margin: auto;
   text-align: center;
+  text-indent: 0px;
 }
 .con-hub .main .ch1SecondRow .round {
   border-radius: 50%;
@@ -2846,11 +3025,12 @@
   margin: auto;
 }
 .history .today-logo .col-100 .subtitle {
-  margin-left: 29vw;
-  margin-top: 2vh;
+  margin: 1vh 0vh -2vh 0vh;
+  width: 100%;
   font-size: 3.5vh;
   color: #2bba9d;
   letter-spacing: 3px;
+  text-align: center;
   font-weight: 500;
 }
 .history .office-space .col-100 {
@@ -2869,11 +3049,12 @@
 }
 .history .office-space .faded p {
   line-height: 1vh;
-  color: #585757;
+  color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img img {
-  width: 110%;
+.history .office-space .building-img svg {
+  width: auto;
+  height: 70vh;
   margin-top: -10vh;
   margin-left: -5vw;
 }
@@ -2894,23 +3075,17 @@
   font-size: 2.3vh;
   padding: 0;
 }
-.history .retail-space .city1-img img {
-  width: 110%;
+.history .retail-space .city1-img svg {
+  height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
+  width: 50vw;
 }
-.history .retail-space .city2-img img {
-  width: 110%;
+.history .retail-space .city2-img svg {
   margin-left: -2vw;
-  margin-top: -25vh;
-}
-
-.intro-filinvest-city .main, .intro-map-main {
-  background-image: url("../img/bg_emblem.png");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 2vw 38vh;
-  background-size: 85vh;
+  margin-top: -20vh;
+  width: 45vw;
+  height: 100%;
 }
 
 /* ===================
@@ -2995,7 +3170,7 @@
   font-size: 2.3vh;
   padding: 3vh 0vh 3vh 2vh;
 }
-.home .main .mainMenuList .link svg {
+.home .main .mainMenuList .link img, .home .main .mainMenuList .link svg {
   width: 5vw;
   height: 6vh;
   float: left;
@@ -3033,6 +3208,9 @@
   top: 0;
   left: 0;
   z-index: -3;
+  background-position: -25vw -5vh;
+  background-size: contain;
+  height: 105%;
 }
 .intro-filinvest-city .backdrop .backdrop-filter {
   height: 100%;
@@ -3041,54 +3219,65 @@
   background: rgba(1, 45, 104, 0.4);
 }
 .intro-filinvest-city .backdrop-blind {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  top: 0;
   left: 0;
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
-  clip-path: polygon(39% 0, 100% 0, 100% 100%, 11% 100%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
   height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
+  padding: 12vh 0;
   width: 60vw;
   margin: auto;
-  margin-top: 15vh;
-  margin-left: 28vw;
+}
+.intro-filinvest-city .main .intro-home-title .filcity {
+  font-size: 5vh;
+  color: #333333;
+  font-weight: 100;
+}
+.intro-filinvest-city .main .intro-home-title .coloredText {
+  color: #002D66;
 }
 .intro-filinvest-city .main .intro-home-title img {
-  width: 40vw;
-  margin-left: 10vw;
+  width: 35vw;
+  margin-left: 12vw;
 }
 .intro-filinvest-city .main .intro-home-title p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 3.8vh;
 }
 
 /* ===================
     INTRO MAP
  ================== */
-.intro-map-main .intro-map-div .map-area {
+.intro-map-main .main .map-area {
   margin: 10vh 12vw;
 }
-.intro-map-main .intro-map-div .map-area img {
+.intro-map-main .main .map-area img {
   width: 100%;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
 }
-.intro-map-main .intro-map-div .intro-map-desc {
+.intro-map-main .main .intro-map-desc {
   text-align: center;
   font-size: 3vh;
 }
-.intro-map-main .intro-map-div .intro-map-desc span {
+.intro-map-main .main .intro-map-desc span {
   color: #002D66;
 }
 
@@ -3173,4 +3362,60 @@
 .up-dev .up-dev2 .logos .festivalDiv {
   margin-left: 2vw;
   margin: auto;
+}
+
+.up-dev3 .backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/intro/intro-fil-city_2.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: 315% center;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background-position: -25vw -5vh;
+  background-size: contain;
+}
+.up-dev3 .backdrop .backdrop-filter {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 171, 152, 0.4);
+}
+.up-dev3 .backdrop-blind {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  left: 0;
+  z-index: -1;
+}
+.up-dev3 .main {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  padding: 5% 0 0 10%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url("../img/bg_emblem.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: -10vw 38vh;
+  background-size: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.up-dev3 .main .intro-home-title {
+  padding: 12vh 0;
+  width: 60vw;
+  margin: auto;
+}
+.up-dev3 .main .intro-home-title img {
+  width: 40vw;
+  margin-left: 10vw;
+}
+.up-dev3 .main .intro-home-title p {
+  text-align: center;
+  font-size: 3vh;
 }

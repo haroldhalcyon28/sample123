@@ -4,16 +4,12 @@
   ================================  */
 app.onPageInit('fourPillarsMenu', function (page) {
 
-   $$(".home-loader").css('display', 'block');
-
-
     /* border animation delay */
     setTimeout(function () {
         // add class loaded to .draw elements to animate border
         $$(".draw").addClass('loaded');
     }, 300);
     /* -- */
-    setTimeout(function(){
          $$(".home-loader").css('display', 'none');
         tl.from('.pillarDiv', .5, { opacity: 0, y: "50px" })
         .fromTo('.backdrop-blind', .5, { x: "-50%" }, { x: "20%" }, "-=0.5")
@@ -22,9 +18,7 @@ app.onPageInit('fourPillarsMenu', function (page) {
         .from('.pillars-inner .pillar:nth-child(3) span', .5, { x: "+=20px", y: "-=20px", opacity: 0 }, "-=0.5")
         .from('.pillars-inner .pillar:nth-child(4) span', .5, { x: "-=20px", y: "-=20px", opacity: 0 }, "-=0.5")
         .to('.backdrop-filter', .5, { opacity: 0 }, "-=.5");
-    }, 1200);
         
-
 
     $$(".pillars-inner .ripple").click(function () {
         var pillar = $$(this);
@@ -46,7 +40,6 @@ app.onPageInit('fourPillarsMenu', function (page) {
         }, 800);
     });
 });
-DEBUG
 
 
 /* ===============================
@@ -64,17 +57,92 @@ app.onPageInit('cbd1', function (page) {
 });
 
 app.onPageInit('cbd2', function (page) {
-   console.log('cbd2 loaded');
+    console.log('cbd2 loaded');
+
+    var tl = TweenMax;
+
+    tl.from(" h1", .7, { opacity: 0, y: "50"}, 0.1 );
+    tl.staggerFrom(".cbd2 .col-33", .7, { opacity: 0, delay: 0.5, y: "50px" }, 0.3);
 
 });
 
 app.onPageInit('cbd3', function (page) {
     console.log('cbd3 loaded');
 
+    var tl = TweenMax;
+
+    tl.from(" h1", .7, { opacity: 0, y: "50"}, 0.1 );
+    tl.staggerFrom(".cbd3 .col-50", .5, { opacity: 0, delay: 0.5, y: "50px" }, 0.3);
+    tl.from(".cbd3 .col-100", .7, { opacity: 0, delay: 1, y:"50px"}, 0.5);
+
 });
 
 app.onPageInit('cbd4', function (page) {
+    
+    var tl = TweenMax;
 
+    //title
+    tl.from(" h1", .7, { opacity: 0, y: "50"} );
+    tl.from(".firstAnim", .3, { opacity: 0, delay: 0.6, y:"20px"} );
+
+    //middle icon
+    tl.from(".middle", 1, { scale: 0.5, delay: 0.7, opacity: 0, ease: Elastic.easeOut, force3D: true }, 0.5);
+    
+    //middle layer left
+    tl.from(".midLayerLeftTop", 0.5, { opacity: 0, delay: 1, y: "50px" , x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerLeft", 0.5, { opacity: 0, delay: 1, x: "30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerLeftBot", 0.5, { opacity: 0, delay: 1, y: "-50px" , x: "30px", ease: Power1.easeOut }, 0.5);
+
+    //middle layer right
+    tl.from(".midLayerRightTop", 0.5, { opacity: 0, delay: 1, y: "50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerRight", 0.5, { opacity: 0, delay: 1, x: "-30px", ease: Power1.easeOut }, 0.5);
+    tl.from(".midLayerRightBot", 0.5, { opacity: 0, delay: 1, y: "-50px" , x: "-30px", ease: Power1.easeOut }, 0.5);
+
+    //outer layer left
+    tl.from(".outLayerLeftTop", 0.5, { opacity: 0, delay: 1.4, x: "60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerLeft", 0.5, { opacity: 0, delay: 1.4, x: "60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerLeftBot", 0.5, { opacity: 0, delay: 1.4 , x: "60px", ease: Power1.easeOut }, 0.5);
+
+    //outer layer right
+    tl.from(".outLayerRightTop", 0.5, { opacity: 0, delay: 1.4, x: "-60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerRight", 0.5, { opacity: 0, delay: 1.4, x: "-60px", ease: Power1.easeOut }, 0.5);
+    tl.from(".outLayerRightBot", 0.5, { opacity: 0, delay: 1.4 , x: "-60px", ease: Power1.easeOut }, 0.5);
+
+    tl.from(".cbd4SecondRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
+    tl.from(".cbd4FirstRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
+    tl.from(".cbd4ThirdRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
+
+    $$('.round').click(function () {
+        var target = $$(this);
+        var imgName = target.attr("data-img");
+        var imgDesc = target.closest(".desc").find('.fontsizes').text();
+        var basePath = 'img/four-pillars/premiere-cbd/';
+
+        ///parse to JSON
+        var imgArr = JSON.parse(imgName);
+        var picsArr = [];
+
+
+        for (var i = 0; i < imgArr.length; i++) {
+            var picsStr = imgArr[i];
+
+            var holder = new Object;
+            holder.url = basePath + picsStr;
+            holder.caption = imgDesc;
+
+            picsArr.push(holder);
+            //alert(picsArr);
+        }
+
+        app.photoBrowser({
+            theme: 'light',
+            maxZoom: 3,
+            navbar: true,
+            toolbar: true,
+            photos: picsArr,
+        }).open();
+
+    })
 });
 
 app.onPageInit('cbd5', function (page) {
@@ -90,21 +158,157 @@ app.onPageInit('cbd7', function (page) {
 });
 
 
-
+/* ==============================   
+            GARDEN CITY
+   ============================== */
 app.onPageInit('garden-city1', function (page) {
+
+    /* ========================== 
+                ANIMATION
+       ========================== */
+
+    var tl = TweenMax;
+
+    //animate initial info
+    //left diagonal
+    tl.from('.fLeftD', .5, { opacity: 0, y: -100, x: 50, ease: Power1.easeOut }, "0.3");
+    tl.from('.sLeftD', .5, { opacity: 0, y: -100, x: 90, delay: 0.5, ease: Power1.easeOut }, "0.3");
+
+    //middle
+    tl.from('.middle', .5, { opacity: 0, y: -100, ease: Power1.easeOut }, "0.3");
+
+    //bottom
+    tl.from('.bottomLayer', .5, { opacity: 0, y: -100, delay: 0.5, ease: Power1.easeOut }, "0.3");
+
+    //right diagonal 
+    tl.from('.fRightD', .5, { opacity: 0, y: -100, x: -50, ease: Power1.easeOut }, "0.3");
+    tl.from('.sRightD', .5, { opacity: 0, y: -100, x: -90, delay: 0.5, ease: Power1.easeOut }, "0.3");
+
+    $$('.round').click(function () {
+
+
+        var target = $$(this);
+        var imgName = target.attr("data-img");
+        var imgDesc = target.closest(".item").find('.fontsizes').text();
+        var basePath = 'img/four-pillars/garden-city/';
+
+        //alert(imgDesc);
+
+        var imgArr = JSON.parse(imgName);
+        var picsArr = [];
+
+
+        for (var i = 0; i < imgArr.length; i++) {
+            var picsStr = imgArr[i];
+
+            var holder = new Object;
+            holder.url = basePath + picsStr;
+            holder.caption = imgDesc;
+
+            picsArr.push(holder);
+            //alert(picsArr);
+        }
+
+        app.photoBrowser({
+            theme: 'light',
+            maxZoom: 3,
+            navbar: true,
+            toolbar: true,
+            photos: picsArr,
+        }).open();
+
+
+    })
+
+});
+
+/* ========================== 
+        MODERN METROPOLIS
+   ========================== */
+
+app.onPageInit('modern-metro1', function (page) {
+
+    var tl = TweenMax;
+    var desc = $$(".item .fontsizes");
+    
+    tl.from(".firstDiv", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut} )
+    tl.from(".secondDiv", .4, { opacity: 0, delay: 0.6, y: "50", ease: Power1.easeOut} )
 
     $$('.round').click(function () {
 
         var target = $$(this);
         var imgName = target.attr("data-img");
-   
+        var imgDesc = target.closest(".item").find('.fontsizes').text();
+        var basePath = 'img/four-pillars/modern-metro/';
 
-         app.photoBrowser({
+        //alert(imgDesc);
+
+        var imgArr = JSON.parse(imgName);
+        var picsArr = [];
+
+
+        for (var i = 0; i < imgArr.length; i++) {
+            var picsStr = imgArr[i];
+
+            var holder = new Object;
+            holder.url = basePath + picsStr;
+            holder.caption = imgDesc;
+
+            picsArr.push(holder);
+            //alert(picsArr);
+        }
+
+        app.photoBrowser({
             theme: 'light',
             maxZoom: 3,
             navbar: true,
             toolbar: true,
-            photos: ['img/four-pillars/garden-city/'+imgName],
+            photos: picsArr,
+        }).open();
+
+    })
+
+});
+
+/* ========================== 
+    CONVERGENCE HUB
+========================== */
+
+app.onPageInit('con-hub1', function (page) {
+
+    var tl = TweenMax;
+    var desc =  $$(".item .fontsizes");
+    
+    tl.from(".item", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut } );
+    ///tl.from(desc, .3, { opacity: 0, delay: 0.8, y: "50" } );
+
+    $$('.round').on('click', function () {
+
+        var target = $$(this);
+        var imgName = target.attr("data-img");
+        var imgDesc = target.closest(".item").find(".fontsizes").text();
+        var basePath = 'img/four-pillars/con-hub/';
+
+        var imgArr = JSON.parse(imgName);
+        var picsArr = [];
+
+        for (var i = 0; i < imgArr.length; i++) {
+            var picsStr = imgArr[i];
+
+            var holder = new Object;
+            holder.url = basePath + picsStr;
+            holder.caption = imgDesc;
+
+            picsArr.push(holder);
+            //alert(picsArr);
+        }
+
+        app.photoBrowser({
+            theme: 'light',
+            maxZoom: 3,
+            navbar: true,
+            toolbar: true,
+            photos: picsArr
         }).open();
 
     })

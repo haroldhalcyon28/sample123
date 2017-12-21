@@ -25,7 +25,7 @@ app.onPageInit('home', function (page) {
         .to('.backdrop-filter', .5, { opacity: 0 })
         .from('.mainMenuList .main-title', .5, { opacity: 0 }, "-=.8")
         .from('.mainMenuList .link', .5, { bottom: -30, opacity: 0 }, '-=1')
-    }, 1200);
+    }, 1500);
 
     
         
@@ -38,6 +38,12 @@ app.onPageInit('home', function (page) {
         TweenMax.to($$(this), 1, {background: bg, delay: .3});
         TweenMax.to(span, .8, {color: 'white', delay: .1});
         TweenMax.to(polypath, .8, {fill: 'white', delay: .3});
+
+        tl.to('#bottom-second-left-triangle', .6, { bottom: -500 })
+        .to('#bottom-left-triangle', .6, { bottom: -1000 }, "-=.6")
+        .to('#bottom-right-triangle', .6, { bottom: -500 }, "-=.6")
+        .to('#upper-right-triangle', .6, { top: -500 }, "-=.6");
+        
         
         //transit
         var file = $$(this).attr('data-link');
@@ -53,8 +59,15 @@ app.onPageInit('home', function (page) {
     intro-filinvest-city
   ================================  */
 app.onPageInit('intro-filinvest-city', function (page) {
-    var first = tl.fromTo('.backdrop-blind', 1, { y: 0 }, { y: "-100%" })
-    .to('.backdrop-filter', .5, { opacity: 0 });
+       $$(".home-loader").css('display', 'block');
+
+    setTimeout(function(){
+        $$(".home-loader").css('display', 'none');
+        var first = tl.fromTo('.backdrop-blind', 1, { y: 0 }, { y: "-100%" })
+        .to('.backdrop-filter', .5, { opacity: 0 });
+    }, 1200);
+
+
 })
 
 

@@ -6,11 +6,11 @@ app.onPageInit("districts", function (page) {
     $$(".filinvestMap").on('click', function (e) {
         var target = $$(e.target);
         var district = target.closest('.district');
-        var paths = $$("path");
+        var paths = $$(".filinvestMap path");
         var pathTitles = $$("path.title");
         var activeDistrict = $$(".district.active");
         var _class = "." + district.attr('data-target');
-        
+
         if (!district.hasClass('active')) {
             //highlight part of map
             activeDistrict.removeClass('active');
