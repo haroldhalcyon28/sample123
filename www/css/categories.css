@@ -341,8 +341,7 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
-  -webkit-animation: fadeIn 1s linear forwards;
-          animation: fadeIn 1s linear forwards;
+  animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
@@ -352,8 +351,7 @@
 .fast-facts .img-container .map .dynamic path,
 .fast-facts .img-container .map .dynamic polygon {
   display: none;
-  -webkit-animation: fadeIn .5s linear forwards;
-          animation: fadeIn .5s linear forwards;
+  animation: fadeIn .5s linear forwards;
 }
 .fast-facts .img-container .map .dynamic path.active,
 .fast-facts .img-container .map .dynamic polygon.active {
@@ -364,13 +362,11 @@
   stroke-dashoffset: 4000;
 }
 .fast-facts .img-container .map .dynamic .road .active {
-  -webkit-animation: dash 25s linear infinite;
-          animation: dash 25s linear infinite;
+  animation: dash 25s linear infinite;
 }
 .fast-facts .img-container .map .dynamic .muntinlupa {
   stroke-dasharray: 14360.7;
-  -webkit-animation: draw 2s linear forwards;
-          animation: draw 2s linear forwards;
+  animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -509,26 +505,9 @@
   margin: -5vh auto;
 }
 
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 10000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @keyframes dash {
   from {
     stroke-dashoffset: 10000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes draw {
-  from {
-    stroke-dashoffset: 14360.7;
   }
   to {
     stroke-dashoffset: 0;
@@ -540,14 +519,6 @@
   }
   to {
     stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -577,8 +548,7 @@
 
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
-  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
-          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+  box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -610,8 +580,7 @@
   background: rgba(0, 171, 152, 0.4);
 }
 .fourPillarsMenu .backdrop-blind {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -629,10 +598,8 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  box-sizing: border-box;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
 }
 .fourPillarsMenu .main .pillarDiv {
   display: block;
@@ -652,15 +619,12 @@
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
   margin-top: 3vh;
-  -webkit-transform: skewX(-20deg);
-          transform: skewX(-20deg);
+  transform: skewX(-20deg);
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 3vw;
-  -webkit-box-shadow: inset 0 0 0 2px transparent;
-          box-shadow: inset 0 0 0 2px transparent;
+  box-shadow: inset 0 0 0 2px transparent;
   position: relative;
   vertical-align: middle;
 }
@@ -696,8 +660,7 @@
   position: relative;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   content: '';
   position: absolute;
 }
@@ -715,8 +678,7 @@
   line-height: 1.2;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar span {
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
+  transform: skewX(20deg);
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::after {
   border: 2px solid transparent;
@@ -1441,10 +1403,8 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
-          clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+  box-sizing: border-box;
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
 }
 .home .main .mainMenuList {
   padding-right: 2.5vw;
@@ -1532,8 +1492,7 @@
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   padding: 5% 0 0 10%;
   height: 100%;
   margin-left: 10%;
@@ -1542,8 +1501,7 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
   padding: 12vh 0;
@@ -1575,8 +1533,7 @@
 }
 .intro-map-main .main .map-area img {
   width: 100%;
-  -webkit-box-shadow: 5px 5px 10px grey;
-          box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px grey;
 }
 .intro-map-main .main .intro-map-desc {
   text-align: center;
@@ -1697,8 +1654,7 @@
   z-index: -1;
 }
 .up-dev3 .main {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   padding: 5% 0 0 10%;
   height: 100%;
   margin-left: 10%;
@@ -1707,8 +1663,7 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .up-dev3 .main .intro-home-title {
   padding: 12vh 0;
@@ -2059,8 +2014,7 @@
   left: 22vw;
 }
 .fast-facts .img-container #filinvest-icon.active {
-  -webkit-animation: fadeIn 1s linear forwards;
-          animation: fadeIn 1s linear forwards;
+  animation: fadeIn 1s linear forwards;
   display: block;
 }
 .fast-facts .img-container #fast-facts-map {
@@ -2070,8 +2024,7 @@
 .fast-facts .img-container .map .dynamic path,
 .fast-facts .img-container .map .dynamic polygon {
   display: none;
-  -webkit-animation: fadeIn .5s linear forwards;
-          animation: fadeIn .5s linear forwards;
+  animation: fadeIn .5s linear forwards;
 }
 .fast-facts .img-container .map .dynamic path.active,
 .fast-facts .img-container .map .dynamic polygon.active {
@@ -2082,13 +2035,11 @@
   stroke-dashoffset: 4000;
 }
 .fast-facts .img-container .map .dynamic .road .active {
-  -webkit-animation: dash 25s linear infinite;
-          animation: dash 25s linear infinite;
+  animation: dash 25s linear infinite;
 }
 .fast-facts .img-container .map .dynamic .muntinlupa {
   stroke-dasharray: 14360.7;
-  -webkit-animation: draw 2s linear forwards;
-          animation: draw 2s linear forwards;
+  animation: draw 2s linear forwards;
 }
 .fast-facts .img-container span {
   display: none;
@@ -2270,8 +2221,7 @@
 
 .cbd .main .cbd4 .cbd4FirstRow .round,
 .cbd .main .cbd4 .cbd4ThirdRow .round, .cbd .main .cbd4 .cbd4SecondRow .round, .garden-city .main .gc1Row .round, .modern-metro .main .mm1Row .round, .con-hub .main .ch1SecondRow .round, .con-hub .main .round {
-  -webkit-box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
-          box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
+  box-shadow: 0.1vh 0.3vh 0.8vw #e4e4e4;
 }
 
 .cbd, .garden-city, .modern-metro, .con-hub {
@@ -2304,8 +2254,7 @@
   background: rgba(0, 171, 152, 0.4);
 }
 .fourPillarsMenu .backdrop-blind {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2323,10 +2272,8 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  box-sizing: border-box;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
 }
 .fourPillarsMenu .main .pillarDiv {
   display: block;
@@ -2346,15 +2293,12 @@
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner {
   margin-top: 3vh;
-  -webkit-transform: skewX(-20deg);
-          transform: skewX(-20deg);
+  transform: skewX(-20deg);
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 3vw;
-  -webkit-box-shadow: inset 0 0 0 2px transparent;
-          box-shadow: inset 0 0 0 2px transparent;
+  box-shadow: inset 0 0 0 2px transparent;
   position: relative;
   vertical-align: middle;
 }
@@ -2390,8 +2334,7 @@
   position: relative;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   content: '';
   position: absolute;
 }
@@ -2409,8 +2352,7 @@
   line-height: 1.2;
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar span {
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
+  transform: skewX(20deg);
 }
 .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::before, .fourPillarsMenu .main .pillars-outer .pillars-inner .pillar.draw::after {
   border: 2px solid transparent;
@@ -3135,10 +3077,8 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
-          clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
+  box-sizing: border-box;
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 12% 100%);
 }
 .home .main .mainMenuList {
   padding-right: 2.5vw;
@@ -3227,8 +3167,7 @@
   z-index: -1;
 }
 .intro-filinvest-city .main {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   padding: 5% 0 0 10%;
   height: 100%;
   margin-left: 10%;
@@ -3237,8 +3176,7 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .intro-filinvest-city .main .intro-home-title {
   padding: 12vh 0;
@@ -3270,8 +3208,7 @@
 }
 .intro-map-main .main .map-area img {
   width: 100%;
-  -webkit-box-shadow: 5px 5px 10px grey;
-          box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px grey;
 }
 .intro-map-main .main .intro-map-desc {
   text-align: center;
@@ -3393,8 +3330,7 @@
   z-index: -1;
 }
 .up-dev3 .main {
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 32% 0%);
   padding: 5% 0 0 10%;
   height: 100%;
   margin-left: 10%;
@@ -3403,8 +3339,7 @@
   background-repeat: no-repeat;
   background-position: -10vw 38vh;
   background-size: 85vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .up-dev3 .main .intro-home-title {
   padding: 12vh 0;

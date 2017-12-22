@@ -5,11 +5,12 @@ var images = [];
 var k = 0;
 var j = dirs.length;
 var dir = '';
-for (var i = 0; i < j; i++) {
+for(var i = 0; i < j; i++){
     dir = dirs[i];
     $.ajax({
         url: dir,
-        async: false,
+        async : false,
+        contentType: 'application/javascript',
         success: function (data) {
             $(data).find("a").filter(function () {
                 return regexp.test($(this).text());

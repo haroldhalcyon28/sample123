@@ -1,4 +1,6 @@
 
+
+
 /* ===============================
     fourPillarsMenu
   ================================  */
@@ -113,48 +115,12 @@ app.onPageInit('cbd4', function (page) {
     tl.from(".cbd4ThirdRow p", 0.5, { opacity: 0, delay: 1.8, ease: Power1.easeOut }, 0.5);
 
     $$('.round').click(function () {
-        var target = $$(this);
-        var imgName = target.attr("data-img");
-        var imgDesc = target.closest(".desc").find('.fontsizes').text();
-        var basePath = 'img/four-pillars/premiere-cbd/';
 
-        ///parse to JSON
-        var imgArr = JSON.parse(imgName);
-        var picsArr = [];
-
-
-        for (var i = 0; i < imgArr.length; i++) {
-            var picsStr = imgArr[i];
-
-            var holder = new Object;
-            holder.url = basePath + picsStr;
-            holder.caption = imgDesc;
-
-            picsArr.push(holder);
-            //alert(picsArr);
-        }
-
-        app.photoBrowser({
-            theme: 'light',
-            maxZoom: 3,
-            navbar: true,
-            toolbar: true,
-            photos: picsArr,
-        }).open();
+      var target =  $$(this);
+      var basePath = 'img/four-pillars/premiere-cbd/';
+      fourPillarsGallery(target, basePath);
 
     })
-});
-
-app.onPageInit('cbd5', function (page) {
-
-});
-
-app.onPageInit('cbd6', function (page) {
-
-});
-
-app.onPageInit('cbd7', function (page) {
-
 });
 
 
@@ -163,12 +129,8 @@ app.onPageInit('cbd7', function (page) {
    ============================== */
 app.onPageInit('garden-city1', function (page) {
 
-    /* ========================== 
-                ANIMATION
-       ========================== */
 
     var tl = TweenMax;
-
     //animate initial info
     //left diagonal
     tl.from('.fLeftD', .5, { opacity: 0, y: -100, x: 50, ease: Power1.easeOut }, "0.3");
@@ -186,37 +148,9 @@ app.onPageInit('garden-city1', function (page) {
 
     $$('.round').click(function () {
 
-
         var target = $$(this);
-        var imgName = target.attr("data-img");
-        var imgDesc = target.closest(".item").find('.fontsizes').text();
         var basePath = 'img/four-pillars/garden-city/';
-
-        //alert(imgDesc);
-
-        var imgArr = JSON.parse(imgName);
-        var picsArr = [];
-
-
-        for (var i = 0; i < imgArr.length; i++) {
-            var picsStr = imgArr[i];
-
-            var holder = new Object;
-            holder.url = basePath + picsStr;
-            holder.caption = imgDesc;
-
-            picsArr.push(holder);
-            //alert(picsArr);
-        }
-
-        app.photoBrowser({
-            theme: 'light',
-            maxZoom: 3,
-            navbar: true,
-            toolbar: true,
-            photos: picsArr,
-        }).open();
-
+        fourPillarsGallery(target, basePath);
 
     })
 
@@ -237,9 +171,46 @@ app.onPageInit('modern-metro1', function (page) {
     $$('.round').click(function () {
 
         var target = $$(this);
+        var basePath = 'img/four-pillars/modern-metro/';
+
+        //alert(imgDesc);
+
+         fourPillarsGallery(target, basePath);
+
+
+    })
+
+});
+
+/* ========================== 
+    CONVERGENCE HUB
+========================== */
+
+app.onPageInit('con-hub1', function (page) {
+
+    var tl = TweenMax;
+    var desc =  $$(".item .fontsizes");
+    
+    tl.from(".item", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut } );
+
+    $$('.round').on('click', function () {
+
+      var target =  $$(this);
+      var basePath = 'img/four-pillars/con-hub/';
+      fourPillarsGallery(target, basePath);
+
+    })
+
+});
+
+
+// Photo Browser function
+function fourPillarsGallery(_target, basePath) {
+    
+        var target = _target;
         var imgName = target.attr("data-img");
         var imgDesc = target.closest(".item").find('.fontsizes').text();
-        var basePath = 'img/four-pillars/modern-metro/';
+        var basePath = basePath;
 
         //alert(imgDesc);
 
@@ -265,52 +236,6 @@ app.onPageInit('modern-metro1', function (page) {
             toolbar: true,
             photos: picsArr,
         }).open();
+}
 
-    })
 
-});
-
-/* ========================== 
-    CONVERGENCE HUB
-========================== */
-
-app.onPageInit('con-hub1', function (page) {
-
-    var tl = TweenMax;
-    var desc =  $$(".item .fontsizes");
-    
-    tl.from(".item", .4, { opacity: 0, delay: 0.3, y: "50", ease: Power1.easeOut } );
-    ///tl.from(desc, .3, { opacity: 0, delay: 0.8, y: "50" } );
-
-    $$('.round').on('click', function () {
-
-        var target = $$(this);
-        var imgName = target.attr("data-img");
-        var imgDesc = target.closest(".item").find(".fontsizes").text();
-        var basePath = 'img/four-pillars/con-hub/';
-
-        var imgArr = JSON.parse(imgName);
-        var picsArr = [];
-
-        for (var i = 0; i < imgArr.length; i++) {
-            var picsStr = imgArr[i];
-
-            var holder = new Object;
-            holder.url = basePath + picsStr;
-            holder.caption = imgDesc;
-
-            picsArr.push(holder);
-            //alert(picsArr);
-        }
-
-        app.photoBrowser({
-            theme: 'light',
-            maxZoom: 3,
-            navbar: true,
-            toolbar: true,
-            photos: picsArr
-        }).open();
-
-    })
-
-});

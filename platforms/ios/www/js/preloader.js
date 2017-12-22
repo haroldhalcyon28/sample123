@@ -10,6 +10,7 @@ for (var i = 0; i < j; i++) {
     $.ajax({
         url: dir,
         async: false,
+        contentType: 'application/javascript',
         success: function (data) {
             $(data).find("a").filter(function () {
                 return regexp.test($(this).text());
