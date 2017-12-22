@@ -5,9 +5,9 @@ app.onPageInit("districts", function (page) {
 
     $$(".filinvestMap").on('click', function (e) {
         var target = $$(e.target);
-        var district = target.closest('.district');
-        var paths = $$(".filinvestMap path");
-        var pathTitles = $$("path.title");
+        var district = target.closest('.district'); // from svg
+        var paths = $$(".filinvestMap path"); // from html
+        var pathTitles = $$("path.title"); // from svg
         var activeDistrict = $$(".district.active");
         var _class = "." + district.attr('data-target');
 
@@ -15,6 +15,7 @@ app.onPageInit("districts", function (page) {
             //highlight part of map
             activeDistrict.removeClass('active');
             paths.addClass('filz');
+            
             pathTitles.removeClass('filz');
             district.addClass('active').find('path').removeClass('filz');
 

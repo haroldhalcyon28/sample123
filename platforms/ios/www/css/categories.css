@@ -596,7 +596,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url("../img/four-pillars/Copy of _KAI4013.jpg");
+  background: url("../img/four-pillars/image_backdrop.jpg");
   background-color: white;
   background-size: cover;
   top: 0;
@@ -1268,6 +1268,20 @@
   width: 80vw;
   height: 60vh;
 }
+.history .filinvest-before .col-100 .trans-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.history .filinvest-before .col-100 .trans-buttons a {
+  display: inline-block;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
 .history .filinvest-before .compare {
   position: absolute;
 }
@@ -1285,6 +1299,12 @@
 }
 .history .area-list1 .col-60 .desc span {
   color: #002D66;
+}
+.history .area-list1 .col-60 .col-100 .col-50 {
+  display: none;
+}
+.history .area-list1 .col-60 .col-100 .col-50.active {
+  display: block;
 }
 .history .area-list1 .col-60 .col-100 .title {
   margin-top: 2vh;
@@ -1358,7 +1378,7 @@
   color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img svg {
+.history .office-space .building-img img, .history .office-space .building-img svg {
   width: auto;
   height: 70vh;
   margin-top: -10vh;
@@ -1381,12 +1401,14 @@
   font-size: 2.3vh;
   padding: 0;
 }
+.history .retail-space .city1-img img,
 .history .retail-space .city1-img svg {
   height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
   width: 50vw;
 }
+.history .retail-space .city2-img img,
 .history .retail-space .city2-img svg {
   margin-left: -2vw;
   margin-top: -20vh;
@@ -2289,7 +2311,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url("../img/four-pillars/Copy of _KAI4013.jpg");
+  background: url("../img/four-pillars/image_backdrop.jpg");
   background-color: white;
   background-size: cover;
   background-position: 315% center;
@@ -2962,6 +2984,20 @@
   width: 80vw;
   height: 60vh;
 }
+.history .filinvest-before .col-100 .trans-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.history .filinvest-before .col-100 .trans-buttons a {
+  display: inline-block;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
 .history .filinvest-before .compare {
   position: absolute;
 }
@@ -2979,6 +3015,12 @@
 }
 .history .area-list1 .col-60 .desc span {
   color: #002D66;
+}
+.history .area-list1 .col-60 .col-100 .col-50 {
+  display: none;
+}
+.history .area-list1 .col-60 .col-100 .col-50.active {
+  display: block;
 }
 .history .area-list1 .col-60 .col-100 .title {
   margin-top: 2vh;
@@ -3052,7 +3094,7 @@
   color: #777777;
   font-size: 2vh;
 }
-.history .office-space .building-img svg {
+.history .office-space .building-img img, .history .office-space .building-img svg {
   width: auto;
   height: 70vh;
   margin-top: -10vh;
@@ -3075,12 +3117,14 @@
   font-size: 2.3vh;
   padding: 0;
 }
+.history .retail-space .city1-img img,
 .history .retail-space .city1-img svg {
   height: auto;
   margin-left: -2vw;
   margin-top: -5vh;
   width: 50vw;
 }
+.history .retail-space .city2-img img,
 .history .retail-space .city2-img svg {
   margin-left: -2vw;
   margin-top: -20vh;
