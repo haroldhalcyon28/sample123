@@ -4,16 +4,12 @@
   ================================  */
 app.onPageInit('fourPillarsMenu', function (page) {
 
-   $$(".home-loader").css('display', 'block');
-
-
     /* border animation delay */
     setTimeout(function () {
         // add class loaded to .draw elements to animate border
         $$(".draw").addClass('loaded');
     }, 300);
     /* -- */
-    setTimeout(function(){
          $$(".home-loader").css('display', 'none');
         tl.from('.pillarDiv', .5, { opacity: 0, y: "50px" })
         .fromTo('.backdrop-blind', .5, { x: "-50%" }, { x: "20%" }, "-=0.5")
@@ -22,9 +18,7 @@ app.onPageInit('fourPillarsMenu', function (page) {
         .from('.pillars-inner .pillar:nth-child(3) span', .5, { x: "+=20px", y: "-=20px", opacity: 0 }, "-=0.5")
         .from('.pillars-inner .pillar:nth-child(4) span', .5, { x: "-=20px", y: "-=20px", opacity: 0 }, "-=0.5")
         .to('.backdrop-filter', .5, { opacity: 0 }, "-=.5");
-    }, 1200);
         
-
 
     $$(".pillars-inner .ripple").click(function () {
         var pillar = $$(this);
@@ -46,7 +40,6 @@ app.onPageInit('fourPillarsMenu', function (page) {
         }, 800);
     });
 });
-DEBUG
 
 
 /* ===============================

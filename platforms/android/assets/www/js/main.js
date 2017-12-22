@@ -8,6 +8,7 @@ var app = new Framework7({
     pushState: true,
     swipeBackPage: false,
     animatePages: false, // i disable the page transitions,
+    imagesLazyLoadSequential: false,
     onAjaxStart: function (xhr) {
         $$(".loaderoverlay").css('display', 'block');
     },
@@ -20,7 +21,6 @@ var app = new Framework7({
 
 // Add view
 var mainView = app.addView('.view-main');
-
 var tl = new TimelineLite();
 
 //initialization of any page / made for active-icons and pagecolor
@@ -41,6 +41,11 @@ $$(document).on('page:init', function (e) {
         //hide fab if pagename is home
         $$(".triangle div").show();
         if (pageName === 'home') {
+
+            TweenLite.fromTo('#bottom-second-left-triangle', .8, { bottom: "-40%" }, { bottom: '-0.1%' });
+            TweenLite.fromTo('#bottom-left-triangle', .8, { bottom: "-40%", right: '-10%' }, { bottom: '-0.1%', right: '0.1%'  });
+            TweenLite.fromTo('#bottom-right-triangle', .8, { bottom: "-40%" }, { bottom: '-0.1%' });
+            TweenLite.fromTo('#upper-right-triangle', .8, { top: "-40%" }, { top: '-0.1%' });
             $$(".action-box").hide();
             $$("#upper-right-triangle").css({ height: '25vh' });
             $$("#bottom-left-triangle").css({
@@ -48,7 +53,6 @@ $$(document).on('page:init', function (e) {
                 display: 'block',
                 height: "43vh",
                 width: "17vw",
-                // bottom: -2
             });
 
         } else {
@@ -98,10 +102,19 @@ $$(document).on('page:init', function (e) {
 
         //animate triangles when entering new category
         if (previousCategory != pageCategory) {
-            var tl = new TimelineLite();
-            tl.fromTo('#upper-right-triangle', .7, { top: "-=350" }, { top: 0 })
-                .fromTo('#bottom-right-triangle, .action-box', .7, { bottom: "-=350" }, { bottom: 0 }, "-=.7")
-                .fromTo('#bottom-left-triangle', .7, { bottom: "-=350" }, { bottom: 0 }, "-=.7");
+            if (pageName !== 'home' && pageName !== 'intro-filinvest-city' && pageName !== 'up-dev1' && pageName !== 'fourPillarsMenu' ) {
+                console.log(`Entering [data-page = ${pageName}]`);
+                $$(`[data-page = ${pageName}] .main`).css({ opacity: 1 });
+                mainEntranceAnimation(`[data-page = ${pageName}]`, .7);
+            }
+            var xTo = '-0.2%';
+            var xFrom = '-=20%'; 
+            var duration = .7;
+            TweenLite.fromTo('#upper-right-triangle', duration, { top: xFrom }, { top: xTo })
+            TweenLite.fromTo('#bottom-right-triangle', duration, { bottom: xFrom, right: xFrom }, { bottom: xTo, right: xTo })
+            TweenLite.fromTo('#bottom-left-triangle', duration, { bottom: xFrom }, { bottom: xTo });
+            TweenLite.fromTo('.action-box', duration, { bottom: xFrom, right: xFrom }, { bottom: xTo, right: '1%' })
+            console.log('previous gaming');
         }
 
         //upon clicking on fab link
@@ -125,74 +138,30 @@ $$(document).on('page:init', function (e) {
             TweenMax.to(target.find("path, polygon"), 1, { fill: 'white', delay: .2 });
 
             setTimeout(function () {
-                //transit
-                mainView.router.loadPage('pages/' + url);
-            }, 1500);
-        });
-
-        //animate triangles
-        var tl = new TimelineLite();
-
-        // Adding timeout if the page is at home
-        if (pageName == 'home') {
-            setTimeout(function () {
-                tl.fromTo('#upper-right-triangle', .5, { top: "-=550" }, { top: -1 })
-                    .fromTo('#bottom-right-triangle, .action-box', .5, { bottom: "-=550" }, { bottom: -1 }, "-=.5")
-                    .fromTo('#bottom-left-triangle, #bottom-second-left-triangle', .5, { bottom: "-=550" }, { bottom: 0 }, "-=.5");
-            }, 1500);
-
-        }
-
-
-        //upon clicking on fab link
-        $$(".speed-dial-buttons a").click(function () {
-
-            var pageColor = $$(".page-on-center").attr('data-pageColor');
-            var target = $$(this);
-            //get url
-            var url = target.attr("data-link");
-            var active_a = $$(".speed-dial-buttons a.active");
-            //animate/set background color of active a to inactive
-            TweenMax.to(active_a, .2, { backgroundColor: 'transparent' });
-            TweenMax.to(active_a.find("path, polygon"), .5, { fill: pageColor, delay: .2 });
-
-            //remove active class on active a and add active class to target a
-            active_a.removeClass('active');
-            target.addClass('active');
-
-            //animate/set background color of target a
-            TweenMax.to(target, .2, { backgroundColor: pageColor });
-            TweenMax.to(target.find("path, polygon"), 1, { fill: 'white', delay: .2 });
+                speedDialClose();
+                trianglesTransition('-=20%', '-=20%', 1.2);
+                if (pageName !== 'up-dev3' && pageName !== 'intro-filinvest-city') {
+                    mainExitAnimation(`[data-page = ${pageName}]`, .7);
+                }
+            }, 700);
 
             setTimeout(function () {
-                //transit
                 mainView.router.loadPage('pages/' + url);
-            }, 1000);
+            }, 1200);
         });
 
         // Home button as div
         $$(".home-button").click(function () {
+            speedDialClose();
+            trianglesTransition('-=20%', '-=20%' , 1.2);
             setTimeout(function () {
                 mainView.router.loadPage('pages/intro/intro-home.html');
             }, 800);
         });
     }, 1);
+
+
 });
 
 
 
-
-
-// You can optionaly use this to add time on your console.log 
-var DEBUG = (function () {
-    var timestamp = function () { };
-    timestamp.toString = function () {
-        return "[DEBUG " + (new Date).toLocaleTimeString() + "]";
-    };
-    return {
-        log: console.log.bind(console, '%s', timestamp)
-    }
-})();
-/* Example usage:
-   DEGUG.log('It's working....'); */
-    //close fab upon init/reinit of new/old page
